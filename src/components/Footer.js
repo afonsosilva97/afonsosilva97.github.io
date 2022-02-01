@@ -1,7 +1,5 @@
 import React from 'react';
 import data from '../personalData';
-import '../styles/mains.scss';
-
 const Footer = () => {
   return (
     <div className="section" id="contact">
