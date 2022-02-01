@@ -1,4 +1,4 @@
-import githubIcon from './images/github.svg';
+import githubIcon from './images/github-icon.svg';
 import linkedinIcon from './images/linkedin-icon.svg';
 
 const personalData = {
