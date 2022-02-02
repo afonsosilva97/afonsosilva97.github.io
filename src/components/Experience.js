@@ -1,24 +1,22 @@
 import React from 'react';
-import Card from './atoms/Card';
 import data from '../personalData';
 
 const Experience = () => {
   return (
-    <div className="section" id="work">
+    <div className="section">
       <div className="container">
-        <div className="work-wrapper">
+        <div className="experience-container">
           <h1>Experience</h1>
-
-          <div className="grid">
-            {/* {data.projects.map((project, index) => (
-                <Card
-                  key={index}
-                  heading={project.title}
-                  paragraph={project.para}
-                  imgUrl={project.imageSrc}
-                  projectLink={project.url}
-                ></Card>
-              ))} */}
+          <div className="experience-grid">
+            {data.experience.map((experience, index) => (
+              <div className="experience" key={index}>
+                <img src={experience.img} alt="css"></img>
+                <p className="experienceDuration">
+                  {experience.startDate} - {experience.endDate}
+                </p>
+                <p>{experience.paragraph}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

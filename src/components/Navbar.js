@@ -6,10 +6,13 @@ const Navbar = () => {
     <div className="section">
       <div className="container">
         <div className="navbar-wrapper">
-          <h1>{data.name}</h1>
+          <div className="section">
+            <h1>{data.name}</h1>
+            <h3>{data.profession}</h3>
+          </div>
           <div className="links-wrapper">
-            {/* <button onClick={() => scrollTo('#work')}>Work</button>
-            <button onClick={() => scrollTo('#about')}>About</button>
+            <button onClick={() => console.log('#work')}>Work</button>
+            {/* <button onClick={() => scrollTo('#about')}>About</button>
             <button onClick={() => scrollTo('#contact')}>Contact</button> */}
           </div>
         </div>
