@@ -6,6 +6,7 @@ import javascriptIcon from './images/javascript-icon.svg';
 import sqlIcon from './images/sql-database-icon.svg';
 
 import cofcoIntlIcon from './images/cofco-intl-logo.png';
+import vestasIcon from './images/vestas-logo.png';
 
 import githubIcon from './images/github-icon.svg';
 import linkedinIcon from './images/linkedin-icon.svg';
@@ -30,12 +31,12 @@ const personalData = {
     },
     {
       img: dotnetIcon,
-      paragraph: ".NET is the developer platform I've used most extensively.",
+      paragraph: ".NET is by far the developer platform I've used most extensively.",
     },
     {
       img: djangoIcon,
       paragraph:
-        "Some of the Python projects I've worked on were web services that used the Django framework.",
+        "I've used the Django framework to develop some Python web applications.",
     },
     {
       img: sqlIcon,
@@ -50,6 +51,13 @@ const personalData = {
       endDate: 'Oct 2021',
       paragraph:
         'Responsible for the design, development and maintenance of the entire software structure – tools, services, databases - used by Market Risk analysts. Directly integrated in the Market Risk team in order to guarantee a full understanding of the software requirements derived from the business needs. Tech Stack: C# (.NET Core), Python, SQL.',
+    },
+    {
+      img: vestasIcon,
+      startDate: 'Sep 2018',
+      endDate: 'Nov 2019',
+      paragraph:
+        'While integrating the Framework team, I worked in the design, development and maintenance of multiple Industry 4.0 projects mostly regarding control systems integrated in structures such as SCADA systems. The team followed the SAFe methodology patterns for internal alignment and coordination with other teams. Tech Stack: C# (.NET Core), SQL Server, Angular.',
     },
   ],
 
