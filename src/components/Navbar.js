@@ -11,7 +11,7 @@ const Navbar = () => {
             <h3>{data.profession}</h3>
           </div>
           <div className="links-wrapper">
-            <button onClick={() => console.log('#work')}>Work</button>
+            {/* <button onClick={() => console.log('#work')}>Work</button> */}
             {/* <button onClick={() => scrollTo('#about')}>About</button>
             <button onClick={() => scrollTo('#contact')}>Contact</button> */}
           </div>
