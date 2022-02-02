@@ -6,12 +6,7 @@ const Header = () => {
     <div className="section" id="home">
       <div className="container">
         <div className="header-wrapper">
-          <h2>
-            Hi, I'm {data.name}{' '}
-            <span role="img" aria-label="Emoji">
-              👋
-            </span>
-          </h2>
+          <h1>Hi, I'm {data.name}!</h1>
           <p>{data.headerParagraph}</p>
         </div>
       </div>

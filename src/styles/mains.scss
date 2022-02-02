@@ -1,21 +1,22 @@
 @charset "utf-8";
-@import "./include-media.scss";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
+@import './include-media.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
 
 // Atoms
-@import "./card.scss";
+@import './card.scss';
 
 // Components
-@import "./navbar.scss";
-@import "./header.scss";
-@import "./work.scss";
-@import "./about.scss";
-@import "./skills.scss";
-@import "./promotion.scss";
-@import "./footer.scss";
+@import './navbar.scss';
+@import './header.scss';
+@import './skills.scss';
+@import './experience.scss';
+@import './projects.scss';
+@import './about.scss';
+@import './promotion.scss';
+@import './footer.scss';
 
 * {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
 body {
