@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import data from './personalData';
 
 import Layout from './components/Layout';
 import Footer from './components/Footer';
@@ -13,7 +14,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Layout>
       {/* <Header></Header> */}
-      <Skills></Skills>
+      <Skills sectionHeader="Tech Stack" skillsArray={data.techStack}></Skills>
       <Experience></Experience>
       {/* <Projects></Projects> */}
       <Footer></Footer>

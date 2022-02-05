@@ -1,14 +1,14 @@
 import React from 'react';
 import data from '../personalData';
 
-const Skills = () => {
+const Skills = ({ sectionHeader, skillsArray }) => {
   return (
     <div className="section">
       <div className="container">
         <div className="skills-container">
-          <h1>Skills</h1>
+          <h1>{sectionHeader}</h1>
           <div className="skills-grid">
-            {data.skills.map((skill, index) => (
+            {skillsArray?.map((skill, index) => (
               <div className="skill" key={index}>
                 <img src={skill.img} alt="css"></img>
                 {/* <span role="img" aria-label="Emoji">
