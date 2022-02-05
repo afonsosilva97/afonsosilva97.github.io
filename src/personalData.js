@@ -1,9 +1,11 @@
+// Technologies/skills icons
 import csharpIcon from './images/csharp-icon.svg';
 import dotnetIcon from './images/dotnet-icon.svg';
 import pythonIcon from './images/python-icon.svg';
 import djangoIcon from './images/django-logo-negative.svg';
 import javascriptIcon from './images/javascript-icon.svg';
 import sqlIcon from './images/sql-database-icon.svg';
+import gitIcon from './images/git-icon.svg';
 
 import cofcoIntlIcon from './images/cofco-intl-logo.png';
 import vestasIcon from './images/vestas-logo.png';
@@ -15,7 +17,7 @@ const personalData = {
   name: 'Afonso Silva',
   profession: 'Software Engineer',
 
-  skills: [
+  techStack: [
     {
       img: csharpIcon,
       paragraph: 'C# is the language I have the most experience with at the moment.',
@@ -35,11 +37,14 @@ const personalData = {
     },
     {
       img: djangoIcon,
-      paragraph:
-        "I've used the Django framework to develop some Python web applications.",
+      paragraph: "I've used the Django framework to develop some Python web services.",
     },
     {
       img: sqlIcon,
+      paragraph: 'Databases and SQL are no strangers to me!',
+    },
+    {
+      img: gitIcon,
       paragraph: 'Databases and SQL are no strangers to me!',
     },
   ],
