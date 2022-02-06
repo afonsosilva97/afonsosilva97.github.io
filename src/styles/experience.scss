@@ -5,38 +5,38 @@
   flex-direction: column;
   align-items: center;
   h1 {
-    font-size: 3rem;
-    line-height: 20px;
+    font-size: 3em;
+    line-height: 1.5em;
   }
 
-  .experience-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 50px;
-    grid-gap: 20px;
-    @include media('>=phone', '<lgphone') {
-      grid-template-columns: 1fr;
-    }
-    @include media('>=lgphone', '<tablet') {
-      grid-template-columns: 1fr;
-    }
-    @include media('>=tablet', '<desktop') {
-      grid-template-columns: 1fr 1fr;
-    }
-    .experience {
-      display: flex;
-      flex-direction: column;
+  .experience {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    .experience-header {
+      // align-items: center;
+      // width: 25%;
       align-items: center;
+      text-align: center;
       img {
-        height: 3.25rem;
+        max-height: 3.5rem;
+        max-width: 12.5rem;
       }
-      p {
-        font-size: 15px;
-      }
-      .experienceDuration {
-        margin-top: 25px;
+      .company-name {
+        margin: 2vh;
+        font-size: 1.15em;
         font-weight: bold;
-        text-align: center;
+      }
+      .experience-duration {
+        font-size: 0.9em;
+        margin: 0;
+      }
+    }
+    .experience-paragraph {
+      p {
+        margin: 3vh 0vh;
+        font-size: 1em;
+        text-align: justify;
       }
     }
   }
