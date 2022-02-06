@@ -45,7 +45,7 @@ const personalData = {
     },
     {
       img: gitIcon,
-      paragraph: 'Databases and SQL are no strangers to me!',
+      paragraph: 'Git',
     },
   ],
 
