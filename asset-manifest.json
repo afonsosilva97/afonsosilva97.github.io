@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cb01ccc6.css",
-    "main.js": "/static/js/main.4a6d15c7.js",
+    "main.css": "/static/css/main.8de74411.css",
+    "main.js": "/static/js/main.5d4350a8.js",
     "static/media/cofco-intl-logo.png": "/static/media/cofco-intl-logo.11c698c46a515c78cdcc.png",
     "static/media/vestas-logo.png": "/static/media/vestas-logo.d50caf0243e0c8d75d45.png",
     "static/media/django-logo-negative.svg": "/static/media/django-logo-negative.326610a9cd55bf5bd7b2e2ee31062f9e.svg",
@@ -14,11 +14,11 @@
     "index.html": "/index.html",
     "static/media/github-icon.svg": "/static/media/github-icon.04be58c17b3d5e9744424d414240dd85.svg",
     "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.32e20978a96ff60c1fdc5a8389e532ba.svg",
-    "main.cb01ccc6.css.map": "/static/css/main.cb01ccc6.css.map",
-    "main.4a6d15c7.js.map": "/static/js/main.4a6d15c7.js.map"
+    "main.8de74411.css.map": "/static/css/main.8de74411.css.map",
+    "main.5d4350a8.js.map": "/static/js/main.5d4350a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb01ccc6.css",
-    "static/js/main.4a6d15c7.js"
+    "static/css/main.8de74411.css",
+    "static/js/main.5d4350a8.js"
   ]
 }
