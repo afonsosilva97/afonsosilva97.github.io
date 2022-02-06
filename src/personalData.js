@@ -51,6 +51,7 @@ const personalData = {
 
   experience: [
     {
+      companyName: 'COFCO International',
       img: cofcoIntlIcon,
       startDate: 'Nov 2019',
       endDate: 'Oct 2021',
@@ -58,6 +59,7 @@ const personalData = {
         'Responsible for the design, development and maintenance of the entire software structure – tools, services, databases - used by Market Risk analysts. Directly integrated in the Market Risk team in order to guarantee a full understanding of the software requirements derived from the business needs. Tech Stack: C# (.NET Core), Python, SQL.',
     },
     {
+      companyName: 'Vestas',
       img: vestasIcon,
       startDate: 'Sep 2018',
       endDate: 'Nov 2019',
