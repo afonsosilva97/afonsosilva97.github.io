@@ -1,13 +1,12 @@
 import React from 'react';
-import data from '../personalData';
 
-const Experience = () => {
+const Experience = ({ sectionHeader, experienceArray }) => {
   return (
     <div className="section">
       <div className="container">
         <div className="experience-container">
-          <h1>Experience</h1>
-          {data.experience.map((experience, index) => (
+          <h1>{sectionHeader}</h1>
+          {experienceArray?.map((experience, index) => (
             <div className="experience" key={index}>
               <div className="experience-header">
                 <img src={experience.img} alt="css"></img>
