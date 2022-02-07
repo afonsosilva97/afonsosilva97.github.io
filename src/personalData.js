@@ -9,6 +9,7 @@ import gitIcon from './images/git-icon.svg';
 
 import cofcoIntlIcon from './images/cofco-intl-logo.png';
 import vestasIcon from './images/vestas-logo.png';
+import egoiIcon from './images/e-goi-logo.svg';
 
 import githubIcon from './images/github-icon.svg';
 import linkedinIcon from './images/linkedin-icon.svg';
@@ -49,7 +50,7 @@ const personalData = {
     },
   ],
 
-  experience: [
+  workExperience: [
     {
       companyName: 'COFCO International',
       img: cofcoIntlIcon,
@@ -65,6 +66,17 @@ const personalData = {
       endDate: 'Nov 2019',
       paragraph:
         'While integrating the Framework team, I worked in the design, development and maintenance of multiple Industry 4.0 projects mostly regarding control systems integrated in structures such as SCADA systems. The team followed the SAFe methodology patterns for internal alignment and coordination with other teams. Tech Stack: C# (.NET Core), SQL Server, Angular.',
+    },
+  ],
+
+  internships: [
+    {
+      companyName: 'E-goi',
+      img: egoiIcon,
+      startDate: 'Nov 2019',
+      endDate: 'Oct 2021',
+      paragraph:
+        "Academic internship done in the context of the ISEP Computer Engineering Bachelor's Degree. A deliverability web dashboard was developed for the company with a range of different technologies, such as Python, Django, PostgreSQL & RRDTool, Munin and httpd.",
     },
   ],
 

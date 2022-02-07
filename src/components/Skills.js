@@ -1,5 +1,4 @@
 import React from 'react';
-import data from '../personalData';
 
 const Skills = ({ sectionHeader, skillsArray }) => {
   return (
