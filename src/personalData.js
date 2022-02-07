@@ -10,6 +10,7 @@ import gitIcon from './images/git-icon.svg';
 import cofcoIntlIcon from './images/cofco-intl-logo.png';
 import vestasIcon from './images/vestas-logo.png';
 import egoiIcon from './images/e-goi-logo.svg';
+import armisIcon from './images/armis-logo.svg';
 
 import githubIcon from './images/github-icon.svg';
 import linkedinIcon from './images/linkedin-icon.svg';
@@ -73,10 +74,18 @@ const personalData = {
     {
       companyName: 'E-goi',
       img: egoiIcon,
-      startDate: 'Nov 2019',
-      endDate: 'Oct 2021',
+      startDate: 'Feb 2018',
+      endDate: 'Jul 2018',
       paragraph:
         "Academic internship done in the context of the ISEP Computer Engineering Bachelor's Degree. A deliverability web dashboard was developed for the company with a range of different technologies, such as Python, Django, PostgreSQL & RRDTool, Munin and httpd.",
+    },
+    {
+      companyName: 'Armis Group',
+      img: armisIcon,
+      startDate: 'Jul 2017',
+      endDate: 'Sep 2017',
+      paragraph:
+        'Summer internship done as a challenge set by the company Armis. Development of an unique canoeing results app, with a range of different technologies, such as Java, C# (.NET Core) and SQL.',
     },
   ],
 
