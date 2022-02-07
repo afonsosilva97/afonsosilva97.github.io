@@ -4,8 +4,10 @@ import dotnetIcon from './images/dotnet-icon.svg';
 import pythonIcon from './images/python-icon.svg';
 import djangoIcon from './images/django-logo-negative.svg';
 import javascriptIcon from './images/javascript-icon.svg';
+import reactIcon from './images/react-logo.svg';
 import sqlIcon from './images/sql-database-icon.svg';
 import gitIcon from './images/git-icon.svg';
+import safeIcon from './images/safe-logo.png';
 
 import cofcoIntlIcon from './images/cofco-intl-logo.png';
 import vestasIcon from './images/vestas-logo.png';
@@ -19,27 +21,19 @@ const personalData = {
   name: 'Afonso Silva',
   profession: 'Software Engineer',
 
-  techStack: [
+  mainTechStack: [
     {
       img: csharpIcon,
       paragraph: 'C# is the language I have the most experience with at the moment.',
-    },
-    {
-      img: pythonIcon,
-      paragraph:
-        'I have developed multiple applications from the ground up using Python.',
-    },
-    {
-      img: javascriptIcon,
-      paragraph: "I'm getting better at JavaScript, definitely interested in it!",
     },
     {
       img: dotnetIcon,
       paragraph: ".NET is by far the developer platform I've used most extensively.",
     },
     {
-      img: djangoIcon,
-      paragraph: "I've used the Django framework to develop some Python web services.",
+      img: pythonIcon,
+      paragraph:
+        'I have developed multiple applications from the ground up using Python.',
     },
     {
       img: sqlIcon,
@@ -48,6 +42,25 @@ const personalData = {
     {
       img: gitIcon,
       paragraph: 'Git',
+    },
+  ],
+
+  otherTechnologiesAndSkills: [
+    {
+      img: javascriptIcon,
+      paragraph: "I'm getting better at JavaScript, definitely interested in it!",
+    },
+    {
+      img: reactIcon,
+      paragraph: "I've built this website using React!",
+    },
+    {
+      img: djangoIcon,
+      paragraph: "I've used the Django framework to develop some Python web services.",
+    },
+    {
+      img: safeIcon,
+      paragraph: 'Scaled Agile Framework',
     },
   ],
 

@@ -12,7 +12,11 @@ ReactDOM.render(
   <React.StrictMode>
     <Layout>
       {/* <Header></Header> */}
-      <Skills sectionHeader="Tech Stack" skillsArray={data.techStack}></Skills>
+      <Skills sectionHeader="Main Tech Stack" skillsArray={data.mainTechStack}></Skills>
+      <Skills
+        sectionHeader="Other Technologies & Skills"
+        skillsArray={data.otherTechnologiesAndSkills}
+      ></Skills>
       <Experience
         sectionHeader="Work Experience"
         experienceArray={data.workExperience}
