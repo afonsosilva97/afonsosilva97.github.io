@@ -14,6 +14,8 @@ import vestasIcon from './images/vestas-logo.png';
 import egoiIcon from './images/e-goi-logo.svg';
 import armisIcon from './images/armis-logo.svg';
 
+import isepIcon from './images/isep-logo.png';
+
 import githubIcon from './images/github-icon.svg';
 import linkedinIcon from './images/linkedin-icon.svg';
 
@@ -103,6 +105,17 @@ const personalData = {
       endDate: 'Sep 2017',
       paragraph:
         'Summer internship done as a challenge set by the company Armis. Development of an unique canoeing results app, with a range of different technologies, such as Java, C# (.NET Core) and SQL.',
+    },
+  ],
+
+  education: [
+    {
+      companyName: 'Instituto Superior de Engenharia do Porto',
+      img: isepIcon,
+      startDate: '2015',
+      endDate: '2018',
+      paragraph:
+        'Engineering course focused on the learning and training of software design, development and maintenance. During 2 semesters, I integrated a unique class of 32 students which used the CDIO Initiative framework. Main subjects included: Software Engineering, Data Structures, Algorithms, Databases, Systems Architecture, Data Analysis',
     },
   ],
 

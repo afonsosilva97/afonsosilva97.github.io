@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar></Navbar>
-      <Fade bottom>
+      <Fade clear>
         <main>{children}</main>
       </Fade>
     </>
