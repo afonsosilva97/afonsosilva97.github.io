@@ -41,18 +41,21 @@ const personalData = {
     },
     {
       img: gitIcon,
-      paragraph: 'Git',
+      paragraph:
+        "Git is the version control system I'm most used to. I've worked a bit with TFS as well.",
     },
   ],
 
   otherTechnologiesAndSkills: [
     {
       img: javascriptIcon,
-      paragraph: "I'm getting better at JavaScript, definitely interested in it!",
+      paragraph:
+        "I'm no JavaScript expert, but I'm definitely invested in getting better at it!",
     },
     {
       img: reactIcon,
-      paragraph: "I've built this website using React!",
+      paragraph:
+        'Still learning its fundamentals, but already finding React very interesting. Learning React is what inspired me to build this website.',
     },
     {
       img: djangoIcon,
@@ -60,7 +63,8 @@ const personalData = {
     },
     {
       img: safeIcon,
-      paragraph: 'Scaled Agile Framework',
+      paragraph:
+        'My team worked using SAFe (Scaled Agile Framework) at Vestas. We had training along with other teams at Vestas HQ in Denmark.',
     },
   ],
 
