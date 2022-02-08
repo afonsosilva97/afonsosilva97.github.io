@@ -4,14 +4,13 @@ import './index.css';
 import data from './personalData';
 
 import Layout from './components/Layout';
-import Footer from './components/Footer';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
+import Footer from './components/Footer';
 
 ReactDOM.render(
   <React.StrictMode>
     <Layout>
-      {/* <Header></Header> */}
       <Skills sectionHeader="Main Tech Stack" skillsArray={data.mainTechStack}></Skills>
       <Skills
         sectionHeader="Other Technologies & Skills"
@@ -25,7 +24,6 @@ ReactDOM.render(
         sectionHeader="Internships"
         experienceArray={data.internships}
       ></Experience>
-      {/* <Projects></Projects> */}
       <Footer></Footer>
     </Layout>
   </React.StrictMode>,
