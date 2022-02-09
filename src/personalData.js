@@ -44,7 +44,7 @@ const personalData = {
     {
       img: gitIcon,
       paragraph:
-        "Git is the version control system I'm most used to. I've worked a bit with TFS as well.",
+        "Git is the version control system I'm most used to. I've worked with TFS as well.",
     },
   ],
 
@@ -76,16 +76,19 @@ const personalData = {
       img: cofcoIntlIcon,
       startDate: 'Nov 2019',
       endDate: 'Oct 2021',
-      paragraph:
-        'Responsible for the design, development and maintenance of the entire software structure – tools, services, databases - used by Market Risk analysts. Directly integrated in the Market Risk team in order to guarantee a full understanding of the software requirements derived from the business needs. Tech Stack: C# (.NET Core), Python, SQL.',
+      descriptionParagraphs: [
+        'I was fully responsible for the design, development and maintenance of the entire software structure – tools, services, databases - used by Market Risk analysts. I was the only software developer directly integrated in the Market Risk team in order to guarantee a full understanding of the software requirements derived from the business needs. Tech Stack: C# (.NET Core), Python, SQL.',
+        'Thanks to the direct integration in a risk management team, I gained knowledge in market risk as well as accounting.',
+      ],
     },
     {
       companyName: 'Vestas',
       img: vestasIcon,
       startDate: 'Sep 2018',
       endDate: 'Nov 2019',
-      paragraph:
+      descriptionParagraphs: [
         'While integrating the Framework team, I worked in the design, development and maintenance of multiple Industry 4.0 projects mostly regarding control systems integrated in structures such as SCADA systems. The team followed the SAFe methodology patterns for internal alignment and coordination with other teams. Tech Stack: C# (.NET Core), SQL Server, Angular.',
+      ],
     },
   ],
 
@@ -95,16 +98,18 @@ const personalData = {
       img: egoiIcon,
       startDate: 'Feb 2018',
       endDate: 'Jul 2018',
-      paragraph:
+      descriptionParagraphs: [
         "Academic internship done in the context of the ISEP Computer Engineering Bachelor's Degree. A deliverability web dashboard was developed for the company with a range of different technologies, such as Python, Django, PostgreSQL & RRDTool, Munin and httpd.",
+      ],
     },
     {
       companyName: 'Armis Group',
       img: armisIcon,
       startDate: 'Jul 2017',
       endDate: 'Sep 2017',
-      paragraph:
+      descriptionParagraphs: [
         'Summer internship done as a challenge set by the company Armis. Development of an unique canoeing results app, with a range of different technologies, such as Java, C# (.NET Core) and SQL.',
+      ],
     },
   ],
 
@@ -114,20 +119,9 @@ const personalData = {
       img: isepIcon,
       startDate: '2015',
       endDate: '2018',
-      paragraph:
+      descriptionParagraphs: [
         'Engineering course focused on the learning and training of software design, development and maintenance. During 2 semesters, I integrated a unique class of 32 students which used the CDIO Initiative framework. Main subjects included: Software Engineering, Data Structures, Algorithms, Databases, Systems Architecture, Data Analysis',
-    },
-  ],
-
-  projects: [
-    {
-      title: 'Project One', //Project Title - Add Your Project Title Here
-      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
-      //Project Image - Add Your Project Image Here
-      imageSrc:
-        'https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60',
-      //Project URL - Add Your Project Url Here
-      url: 'http://chetanverma.com/',
+      ],
     },
   ],
 
