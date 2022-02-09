@@ -15,8 +15,10 @@ const Experience = ({ sectionHeader, experienceArray }) => {
                   {experience.startDate} - {experience.endDate}
                 </p>
               </div>
-              <div className="experience-paragraph">
-                <p>{experience.paragraph}</p>
+              <div className="experience-description">
+                {experience.descriptionParagraphs?.map((paragraph) => (
+                  <p>{paragraph}</p>
+                ))}
               </div>
             </div>
           ))}
