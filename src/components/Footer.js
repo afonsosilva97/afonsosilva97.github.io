@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../personalData';
+
 const Footer = () => {
   return (
     <div className="section" id="contact">

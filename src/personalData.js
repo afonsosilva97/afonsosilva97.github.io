@@ -19,9 +19,17 @@ import isepIcon from './images/isep-logo.png';
 import githubIcon from './images/github-icon.svg';
 import linkedinIcon from './images/linkedin-icon.svg';
 
+function calculateDifferenceBetweenDates(startDate, endDate) {
+  return Math.abs(new Date(endDate - startDate).getUTCFullYear() - 1970);
+}
+
+const birthday = new Date(1997, 3, 25);
+
 const personalData = {
   name: 'Afonso Silva',
   profession: 'Software Engineer',
+  birthDate: birthday,
+  age: calculateDifferenceBetweenDates(birthday, Date.now()),
 
   mainTechStack: [
     {
