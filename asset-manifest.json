@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8926443c.css",
-    "main.js": "/static/js/main.c3e6b720.js",
+    "main.css": "/static/css/main.2dca9822.css",
+    "main.js": "/static/js/main.06f6ca26.js",
     "static/media/cofco-intl-logo.png": "/static/media/cofco-intl-logo.11c698c46a515c78cdcc.png",
     "static/media/safe-logo.png": "/static/media/safe-logo.44dabbf99c7abcc1c3d0.png",
     "static/media/vestas-logo.png": "/static/media/vestas-logo.d50caf0243e0c8d75d45.png",
@@ -19,11 +19,11 @@
     "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.32e20978a96ff60c1fdc5a8389e532ba.svg",
     "static/media/armis-logo.svg": "/static/media/armis-logo.b82ee7fbcbf8facc4507228a40624c45.svg",
     "static/media/react-logo.svg": "/static/media/react-logo.928f956d9c8ebcffb98a8e917154a81a.svg",
-    "main.8926443c.css.map": "/static/css/main.8926443c.css.map",
-    "main.c3e6b720.js.map": "/static/js/main.c3e6b720.js.map"
+    "main.2dca9822.css.map": "/static/css/main.2dca9822.css.map",
+    "main.06f6ca26.js.map": "/static/js/main.06f6ca26.js.map"
   },
   "entrypoints": [
-    "static/css/main.8926443c.css",
-    "static/js/main.c3e6b720.js"
+    "static/css/main.2dca9822.css",
+    "static/js/main.06f6ca26.js"
   ]
 }
