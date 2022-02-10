@@ -47,7 +47,8 @@ const personalData = {
     },
     {
       img: sqlIcon,
-      paragraph: 'Databases and SQL are no strangers to me!',
+      paragraph:
+        "I'm very used to writing SQL queries as well as building relational databases. I have experience with multiple database systems, such as SQL Server and PostgreSQL.",
     },
     {
       img: gitIcon,
@@ -131,6 +132,10 @@ const personalData = {
         'Engineering course focused on the learning and training of software design, development and maintenance. During 2 semesters, I integrated a unique class of 32 students which used the CDIO Initiative framework. Main subjects included: Software Engineering, Data Structures, Algorithms, Databases, Systems Architecture, Data Analysis',
       ],
     },
+  ],
+
+  aboutParagraphs: [
+    "I love sports, both to practice and to watch. In the past I've practiced tennis, Muay Thai and boxing. Yet, my favorite ones to watch are football and Formula 1, although I still watch some of the most important tennis matches and some of the biggest fights.",
   ],
 
   social: [

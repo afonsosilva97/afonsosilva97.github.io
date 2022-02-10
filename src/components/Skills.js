@@ -10,9 +10,6 @@ const Skills = ({ sectionHeader, skillsArray }) => {
             {skillsArray?.map((skill, index) => (
               <div className="skill" key={index}>
                 <img src={skill.img} alt="css"></img>
-                {/* <span role="img" aria-label="Emoji">
-                  ⭐⭐⭐⭐
-                </span> */}
                 <p>{skill.paragraph}</p>
               </div>
             ))}

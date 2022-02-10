@@ -28,7 +28,7 @@ ReactDOM.render(
         experienceArray={data.internships}
       ></Experience>
       <Experience sectionHeader="Education" experienceArray={data.education}></Experience>
-      {/* <About></About> */}
+      <About></About>
       <Footer></Footer>
     </Layout>
   </React.StrictMode>,
