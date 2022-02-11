@@ -23,13 +23,15 @@ function calculateDifferenceBetweenDates(startDate, endDate) {
   return Math.abs(new Date(endDate - startDate).getUTCFullYear() - 1970);
 }
 
+const name = 'Afonso Silva';
 const birthday = new Date(1997, 3, 25);
+const age = calculateDifferenceBetweenDates(birthday, Date.now());
 
 const personalData = {
-  name: 'Afonso Silva',
+  name: name,
   profession: 'Software Engineer',
   birthDate: birthday,
-  age: calculateDifferenceBetweenDates(birthday, Date.now()),
+  age: age,
 
   mainTechStack: [
     {
@@ -135,7 +137,10 @@ const personalData = {
   ],
 
   aboutParagraphs: [
-    "I love sports, both to practice and to watch. In the past I've practiced tennis, Muay Thai and boxing. Yet, my favorite ones to watch are football and Formula 1, although I still watch some of the most important tennis matches and some of the biggest fights.",
+    `My name is ${name} and I'm a ${age} years old software engineer from Portugal. I am mainly a backend developer but also have some frontend skills as I'm always willing to expand my software development abilities. Microsoft technologies such as C# and .NET have been the ones I've used more extensively, but that hasn't stopped from venturing into new projects using other technologies such as Python, JavaScript and React.`,
+    "Besides developing software I have a big passion for sports, such as football, motorsports, boxing, tennis, weightlifting and Muay Thai! In the past I've practiced tennis, Muay Thai and boxing. Nowadays, I only lift weights and do some cardio to stay in shape and clear my mind. I find the world of cars and motorsports fascinating, especially if it's Formula 1!",
+    "In most recent years I've started to dedicate more of my of time to reading books, whether it's classic novel or an nonfiction I find interesting. Some of my favorite books include '1984' by George Orwell, 'Crime and Punishment' by Fyodor Dostoevsky, 'Medidations' by Marcus Aurelius, 'Fooled by Randomness' by Nassim Taleb and many of José Saramago's novels. At the moment I'm reading 'Pride and Prejudice' by Jane Austen and 'Thinking, Fast and Slow' by Daniel Kahneman.",
+    'Photography is also another passion of mine and it used to be a hobby that I put a lot of hours into. The love for capturing images is still there, but as of now I almost only carry my camera when travelling.',
   ],
 
   social: [

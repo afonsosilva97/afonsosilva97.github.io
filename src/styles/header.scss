@@ -17,11 +17,11 @@
 
   p {
     width: 50vw;
-    font-size: 1.12em;
-    text-align: center;
-    overflow: hidden;
     @include media('>=phone', '<desktop') {
       width: 80vw;
     }
+    font-size: 1.12em;
+    text-align: center;
+    overflow: hidden;
   }
 }
