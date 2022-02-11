@@ -4,7 +4,6 @@ import './index.css';
 import data from './personalData';
 
 import Layout from './components/Layout';
-import Header from './components/Header.js';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import About from './components/About';
@@ -13,7 +12,6 @@ import Footer from './components/Footer';
 ReactDOM.render(
   <React.StrictMode>
     <Layout>
-      <Header></Header>
       <Skills sectionHeader="Main Tech Stack" skillsArray={data.mainTechStack}></Skills>
       <Skills
         sectionHeader="Other Technologies & Skills"
