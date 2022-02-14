@@ -84,16 +84,19 @@ const personalData = {
   workExperience: [
     {
       companyName: 'COFCO International',
+      title: 'Market Risk Software Engineer',
       img: cofcoIntlIcon,
       startDate: 'Nov 2019',
       endDate: 'Oct 2021',
       descriptionParagraphs: [
         'I was fully responsible for the design, development and maintenance of the entire software structure – tools, services, databases - used by Market Risk analysts. I was the only software developer directly integrated in the Market Risk team in order to guarantee a full understanding of the software requirements derived from the business needs. Tech Stack: C# (.NET Core), Python, SQL.',
-        'Thanks to the direct integration in a risk management team, I gained knowledge in market risk as well as accounting.',
+        // 'COFCO International',
+        'Thanks to the direct integration in a risk management team, I went from having a basic level of financial literacy to having knowledge in financial markets, market risk.',
       ],
     },
     {
       companyName: 'Vestas',
+      title: 'Software Engineer',
       img: vestasIcon,
       startDate: 'Sep 2018',
       endDate: 'Nov 2019',
@@ -106,6 +109,7 @@ const personalData = {
   internships: [
     {
       companyName: 'E-goi',
+      title: 'Academic Internship',
       img: egoiIcon,
       startDate: 'Feb 2018',
       endDate: 'Jul 2018',
@@ -115,11 +119,12 @@ const personalData = {
     },
     {
       companyName: 'Armis Group',
+      title: 'Summer Internship',
       img: armisIcon,
       startDate: 'Jul 2017',
       endDate: 'Sep 2017',
       descriptionParagraphs: [
-        'Summer internship done as a challenge set by the company Armis. Development of an unique canoeing results app, with a range of different technologies, such as Java, C# (.NET Core) and SQL.',
+        "Armis set a challenge in the form of a summer internship to some of the students in ISEP's CDIO-IL class. Me and two other colleagues accepted the challenge and took on the challenge of delivering a mobile app focused on the sport of canoeing. We developed all of the backend and frontend applications ourselves working with a range of different technologies such as Java (native Android App), C#/.NET Core (backend web services), Swift (native iOS app) and SQL. This was a very enriching experience because we got to work with some technologies for the first and had the insight of Armis' software developers who provided us with some tech talks and discussed ideas with us.",
       ],
     },
   ],
@@ -127,19 +132,21 @@ const personalData = {
   education: [
     {
       companyName: 'Instituto Superior de Engenharia do Porto',
+      title: "Bachelor's Degree, Computer Engineering",
       img: isepIcon,
       startDate: '2015',
       endDate: '2018',
       descriptionParagraphs: [
-        'Engineering course focused on the learning and training of software design, development and maintenance. During 2 semesters, I integrated a unique class of 32 students which used the CDIO Initiative framework. Main subjects included: Software Engineering, Data Structures, Algorithms, Databases, Systems Architecture, Data Analysis',
+        "Computer Engineering course mostly focused on the design and development of software. In typical ISEP style, the course has a very 'hands-on' approach, meaning that projects are an instrumental part of nearly all subjects and each semester has at least one big project at the end of it. Main subjects included: Software Engineering, Data Structures, Algorithms, Databases, Systems Architecture, Data Analysis.",
+        'During 2 semesters of the course, I integrated a unique class of only 32 students which was based on the CDIO Initiative framework. This class was split into 4 teams of 8 elements each and we worked using Scrum methodology. Besides the subjects already meant for those semesters, this class had the opportunity of developing projects with the company Armis acting as a stakeholder. Instead of a single big project done at the end of the semester, each team worked on multiple large projects over the whole semester. After the first semester, Armis challenged some of the students for a summer internship where we got to develop a project from the ground in their facilities and had some learning sessions.',
       ],
     },
   ],
 
   aboutParagraphs: [
     `My name is ${name} and I'm a ${age} years old software engineer from Portugal. I am mainly a backend developer but also have some frontend skills as I'm always willing to expand my software development abilities. Microsoft technologies such as C# and .NET have been the ones I've used more extensively, but that hasn't stopped from venturing into new projects using other technologies such as Python, JavaScript and React.`,
-    "Besides developing software I have a big passion for sports, such as football, motorsports, boxing, tennis, weightlifting and Muay Thai! In the past I've practiced tennis, Muay Thai and boxing. Nowadays, I only lift weights and do some cardio to stay in shape and clear my mind. I find the world of cars and motorsports fascinating, especially if it's Formula 1!",
-    "In most recent years I've started to dedicate more of my of time to reading books, whether it's classic novel or an nonfiction I find interesting. Some of my favorite books include '1984' by George Orwell, 'Crime and Punishment' by Fyodor Dostoevsky, 'Medidations' by Marcus Aurelius, 'Fooled by Randomness' by Nassim Taleb and many of José Saramago's novels. At the moment I'm reading 'Pride and Prejudice' by Jane Austen and 'Thinking, Fast and Slow' by Daniel Kahneman.",
+    "Besides developing software I have a big passion for sports, such as football, Formula 1, boxing, tennis, weightlifting and Muay Thai! In the past I've practiced tennis, Muay Thai and boxing. Nowadays, lifting weights and doing cardio are my choices of exercises to stay my body and mind in good health.",
+    "In recent years I've started to dedicate more of my of time to reading books, whether it's classic novel or an nonfiction I find interesting. Some of my favorite books include '1984' by George Orwell, 'Crime and Punishment' by Fyodor Dostoevsky, 'Medidations' by Marcus Aurelius, 'Fooled by Randomness' by Nassim Taleb, 'Pride and Prejudice' by Jane Austen and many of José Saramago's novels. At the moment I'm reading 'Brave New World' by Aldous Huxley and 'Thinking, Fast and Slow' by Daniel Kahneman.",
     'Photography is also another passion of mine and it used to be a hobby that I put a lot of hours into. The love for capturing images is still there, but as of now I almost only carry my camera when travelling.',
   ],
 

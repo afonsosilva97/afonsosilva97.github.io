@@ -11,6 +11,7 @@ const Experience = ({ sectionHeader, experienceArray }) => {
               <div className="experience-header">
                 <img src={experience.img} alt="css"></img>
                 <p className="company-name">{experience.companyName}</p>
+                <p className="title-text">{experience.title}</p>
                 <p className="experience-duration">
                   {experience.startDate} - {experience.endDate}
                 </p>
