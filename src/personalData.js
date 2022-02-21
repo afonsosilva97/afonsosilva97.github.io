@@ -89,6 +89,7 @@ const personalData = {
       startDate: 'Nov 2019',
       endDate: 'Oct 2021',
       descriptionParagraphs: [
+        // 'At COFCO International ',
         'I was fully responsible for the design, development and maintenance of the entire software structure – tools, services, databases - used by Market Risk analysts. I was the only software developer directly integrated in the Market Risk team in order to guarantee a full understanding of the software requirements derived from the business needs. Tech Stack: C# (.NET Core), Python, SQL.',
         // 'COFCO International',
         'Thanks to the direct integration in a risk management team, I went from having a basic level of financial literacy to having knowledge in financial markets, market risk.',
@@ -101,7 +102,7 @@ const personalData = {
       startDate: 'Sep 2018',
       endDate: 'Nov 2019',
       descriptionParagraphs: [
-        'While integrating the Framework team, I worked in the design, development and maintenance of multiple Industry 4.0 projects mostly regarding control systems integrated in structures such as SCADA systems. The team followed the SAFe methodology patterns for internal alignment and coordination with other teams. Tech Stack: C# (.NET Core), SQL Server, Angular.',
+        'While integrating the Framework team, I worked in the design, development and maintenance of multiple Industry 4.0 projects mostly regarding control systems integrated in structures such as SCADA systems. The team followed the SAFe methodology patterns for internal alignment and coordination with other teams. The tech stack consisted of C# (.NET Core), SQL Server and Angular.',
       ],
     },
   ],
