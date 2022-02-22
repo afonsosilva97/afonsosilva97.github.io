@@ -89,10 +89,9 @@ const personalData = {
       startDate: 'Nov 2019',
       endDate: 'Oct 2021',
       descriptionParagraphs: [
-        // 'At COFCO International ',
-        'I was fully responsible for the design, development and maintenance of the entire software structure – tools, services, databases - used by Market Risk analysts. I was the only software developer directly integrated in the Market Risk team in order to guarantee a full understanding of the software requirements derived from the business needs. Tech Stack: C# (.NET Core), Python, SQL.',
-        // 'COFCO International',
-        'Thanks to the direct integration in a risk management team, I went from having a basic level of financial literacy to having knowledge in financial markets, market risk.',
+        'At COFCO International I worked as the Market Risk software engineer, working directly with risk managers and analysts. During my two years there I was fully responsible for the design, development and maintenance of the entire software structure used by the Market Risk team. This structure was mostly built from scratch and it included web services, console applications and a relational database.',
+        "I was trusted to make most of the software related decisions, so the tech stack was constituted by the technologies I found best suited to answer the team's needs. I used C# (.NET Core) to build web services, Python (along with HTML and CSS) to create reporting tools and SQL Server for the database. Over time, as the projects evolved, the team got less dependent on Excel to run its processes and store its data, which improved both performance and reliability.",
+        "Asides from developing software, I learned a lot about market risk and financial markets as many of the team's elements frequently dedicated some of their time to teach me about the intricacies of the business. Having such knowledge was very important for the team as it allowed me to understand all the requirements and even innovate beyond just the most fundamental features.",
       ],
     },
     {
