@@ -9,6 +9,7 @@ import sqlIcon from './images/sql-database-icon.svg';
 import gitIcon from './images/git-icon.svg';
 import safeIcon from './images/safe-logo.png';
 
+import lidyaIcon from './images/lidya-logo.png';
 import cofcoIntlIcon from './images/cofco-intl-logo.png';
 import vestasIcon from './images/vestas-logo.png';
 import egoiIcon from './images/e-goi-logo.svg';
@@ -18,6 +19,7 @@ import isepIcon from './images/isep-logo.png';
 
 import githubIcon from './images/github-icon.svg';
 import linkedinIcon from './images/linkedin-icon.svg';
+import goodreadsIcon from './images/goodreads-icon.svg';
 
 function calculateDifferenceBetweenDates(startDate, endDate) {
   return Math.abs(new Date(endDate - startDate).getUTCFullYear() - 1970);
@@ -83,15 +85,24 @@ const personalData = {
 
   workExperience: [
     {
+      companyName: 'Lidya',
+      title: 'Software Engineer',
+      img: lidyaIcon,
+      startDate: 'March 2022',
+      endDate: 'Present',
+      descriptionParagraphs: [
+        "Currently a key member of Lidya's backend team, specializing in feature analysis, code development, and ensuring on-time project delivery. My commitment extends to providing support for system integrity while actively engaging in peer code reviews and continuously collaborating with all engineering and product teams.",
+      ],
+    },
+    {
       companyName: 'COFCO International',
       title: 'Market Risk Software Engineer',
       img: cofcoIntlIcon,
       startDate: 'Nov 2019',
-      endDate: 'Oct 2021',
+      endDate: 'Nov 2021',
       descriptionParagraphs: [
-        'At COFCO International I worked as the Market Risk software engineer, working directly with risk managers and analysts. During my two years there I was fully responsible for the design, development and maintenance of the entire software structure used by the Market Risk team. This structure was mostly built from scratch and it included web services, console applications and a relational database.',
-        "I was trusted to make most of the software related decisions, so the tech stack was constituted by the technologies I found best suited to answer the team's needs. I used C# (.NET Core) to build web services, Python (along with HTML and CSS) to create reporting tools and SQL Server for the database. Over time, as the projects evolved, the team got less dependent on Excel to run its processes and store its data, which improved both performance and reliability.",
-        "Asides from developing software, I learned a lot about market risk and financial markets as many of the team's elements frequently dedicated some of their time to teach me about the intricacies of the business. Having such knowledge was very important for the team as it allowed me to understand all the requirements and even innovate beyond just the most fundamental features.",
+        'Served as the only software engineer for the Market Risk team, ensuring the design, development, and maintenance of the entire software infrastructure. Deeply involved in understanding business requirements and translating them into effective software solutions. Extensively learned about market risk and financial markets through the guidance of experienced team members.',
+        'Tech stack included C# (.NET), SQL Server, Python.',
       ],
     },
     {
@@ -101,7 +112,8 @@ const personalData = {
       startDate: 'Sep 2018',
       endDate: 'Nov 2019',
       descriptionParagraphs: [
-        'While integrating the Framework team, I worked in the design, development and maintenance of multiple Industry 4.0 projects mostly regarding control systems integrated in structures such as SCADA systems. The team followed the SAFe methodology patterns for internal alignment and coordination with other teams. The tech stack consisted of C# (.NET Core), SQL Server and Angular.',
+        'While integrating the Framework team, I worked in the design, development and maintenance of multiple Industry 4.0 projects mostly regarding control systems integrated in structures such as SCADA systems. The team followed the SAFe methodology patterns for internal alignment and coordination with other teams.',
+        'Tech stack included C# (.NET), SQL Server, Angular, Kafka, Redis among other technologies.',
       ],
     },
   ],
@@ -144,15 +156,24 @@ const personalData = {
   ],
 
   aboutParagraphs: [
-    `My name is ${name} and I'm a ${age} years old software engineer from Portugal. I am mainly a backend developer but also have some frontend skills as I'm always willing to expand my software development abilities. Microsoft technologies such as C# and .NET have been the ones I've used more extensively, but that hasn't stopped from venturing into new projects using other technologies such as Python, JavaScript and React.`,
-    "Besides developing software I have a big passion for sports, such as football, Formula 1, boxing, tennis, weightlifting and Muay Thai! In the past I've practiced tennis, Muay Thai and boxing. Nowadays, lifting weights and doing cardio are my choices of exercises to stay my body and mind in good health.",
-    "In recent years I've started to dedicate more of my of time to reading books, whether it's classic novel or an nonfiction I find interesting. Some of my favorite books include '1984' by George Orwell, 'Crime and Punishment' by Fyodor Dostoevsky, 'Medidations' by Marcus Aurelius, 'Fooled by Randomness' by Nassim Taleb, 'Pride and Prejudice' by Jane Austen and many of José Saramago's novels. At the moment I'm reading 'Brave New World' by Aldous Huxley and 'Thinking, Fast and Slow' by Daniel Kahneman.",
-    'Photography is also another passion of mine and it used to be a hobby that I put a lot of hours into. The love for capturing images is still there, but as of now I almost only carry my camera when travelling.',
+    `My name is ${name} and I'm a ${age} years old software engineer from Portugal. I am mainly a backend developer but also have some frontend skills as I'm always willing to expand my software development abilities. Technologies such as C# and .NET have been the ones I've used more extensively, but that hasn't stopped from venturing into new projects using other technologies such as Python, JavaScript and React.`,
+    "Besides developing software I have a big passion for sports, especially football, motorsports and martial arts. In the past I've practiced tennis, Muay Thai and boxing. Nowadays, weightlifting, calisthenics and swimming are my choices of exercise to keep my body and mind in good health.",
+    "Over time, as I've tried to build up good habits in my routine, reading went from being a 'task' to a pleasure of mine. In case you are curious on what I'm currently reading or have read recently, you can find the link to my Goodreads profile below.",
+    'Photography is another passion of mine and it used to be a hobby that I put a lot of hours into. The love for capturing images is still there, but as of now I almost only carry my camera when travelling.',
   ],
 
   social: [
-    { img: linkedinIcon, url: 'https://www.linkedin.com/in/afonso-marinho-da-silva/' },
-    { img: githubIcon, url: 'https://github.com/afonsosilva97' },
+    {
+      img: linkedinIcon,
+      url: 'https://www.linkedin.com/in/afonso-marinho-da-silva/',
+      name: 'LinkedIn',
+    },
+    { img: githubIcon, url: 'https://github.com/afonsosilva97', name: 'GitHub' },
+    {
+      img: goodreadsIcon,
+      url: 'https://www.goodreads.com/user/show/98787085-afonso-silva',
+      name: 'Goodreads',
+    },
   ],
 };
 
