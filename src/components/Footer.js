@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="section" id="contact">
       <div className="container">
         <div className="footer-container">
-          <h1>Contact</h1>
+          <h1>Profiles</h1>
           <div className="social-icons">
             {data.social.map((socialLink, index) => (
               <a
