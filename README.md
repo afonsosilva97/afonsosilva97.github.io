@@ -1,3 +1,7 @@
+I created this project to have my own website: https://afonsosilva97.github.io/
+I've mainly developed backend applications in my career but I like to learn new skills and this seemed like a fun way to learn the basics of React.
+Below are the React guidelines which have helped me build this project (and which might serve you just as well if you intend to create something too).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
