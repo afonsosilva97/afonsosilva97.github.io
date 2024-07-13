@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.737006ba.css",
+    "main.js": "/static/js/main.7a712c38.js",
+    "static/media/cofco-intl-logo.png": "/static/media/cofco-intl-logo.11c698c46a515c78cdcc.png",
+    "static/media/lidya-logo.png": "/static/media/lidya-logo.72d79a993fb03cee3df6.png",
+    "static/media/safe-logo.png": "/static/media/safe-logo.44dabbf99c7abcc1c3d0.png",
+    "static/media/vestas-logo.png": "/static/media/vestas-logo.d50caf0243e0c8d75d45.png",
+    "static/media/isep-logo.png": "/static/media/isep-logo.7e1ec318de4f11ec60ac.png",
+    "static/media/goodreads-icon.svg": "/static/media/goodreads-icon.339a930cc2af86c419e11faee7daadd3.svg",
+    "static/media/e-goi-logo.svg": "/static/media/e-goi-logo.49a81fdda0720da60ba9553f2a1a6a45.svg",
+    "static/media/django-logo-negative.svg": "/static/media/django-logo-negative.326610a9cd55bf5bd7b2e2ee31062f9e.svg",
+    "static/media/sql-database-icon.svg": "/static/media/sql-database-icon.efb7363b2e231ddf7a5c31626c04099d.svg",
+    "static/media/csharp-icon.svg": "/static/media/csharp-icon.04d9d2bb18b9781567f7340691dcc686.svg",
+    "static/media/python-icon.svg": "/static/media/python-icon.e6d7dc739a91892bbf1f6262412046dd.svg",
+    "index.html": "/index.html",
+    "static/media/dotnet-icon.svg": "/static/media/dotnet-icon.18c10050cdc904fbb0819ae44b69d91f.svg",
+    "static/media/javascript-icon.svg": "/static/media/javascript-icon.00f3e5cf8bcf4ae623b3835ca5791b15.svg",
+    "static/media/git-icon.svg": "/static/media/git-icon.c60b7e5ae8ec2562f23fdddcab300026.svg",
+    "static/media/github-icon.svg": "/static/media/github-icon.04be58c17b3d5e9744424d414240dd85.svg",
+    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.32e20978a96ff60c1fdc5a8389e532ba.svg",
+    "static/media/armis-logo.svg": "/static/media/armis-logo.b82ee7fbcbf8facc4507228a40624c45.svg",
+    "static/media/react-logo.svg": "/static/media/react-logo.928f956d9c8ebcffb98a8e917154a81a.svg",
+    "main.737006ba.css.map": "/static/css/main.737006ba.css.map",
+    "main.7a712c38.js.map": "/static/js/main.7a712c38.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.737006ba.css",
+    "static/js/main.7a712c38.js"
+  ]
+}
