@@ -9,12 +9,7 @@ const Footer = () => {
           <h1>Profiles</h1>
           <div className="social-icons">
             {data.social.map((socialLink, index) => (
-              <a
-                key={index}
-                href={socialLink.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a key={index} href={socialLink.url} target="_blank" rel="noopener noreferrer">
                 <img src={socialLink.img} alt="icons"></img>
               </a>
             ))}
