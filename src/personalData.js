@@ -46,8 +46,7 @@ const personalData = {
     },
     {
       img: pythonIcon,
-      paragraph:
-        'I have developed multiple applications from the ground up using Python.',
+      paragraph: 'I have developed multiple applications from the ground up using Python.',
     },
     {
       img: sqlIcon,
@@ -64,8 +63,7 @@ const personalData = {
   otherTechnologiesAndSkills: [
     {
       img: javascriptIcon,
-      paragraph:
-        "I'm no JavaScript expert, but I'm definitely invested in getting better at it!",
+      paragraph: "I'm no JavaScript expert, but I'm definitely invested in getting better at it!",
     },
     {
       img: reactIcon,
@@ -168,7 +166,11 @@ const personalData = {
       url: 'https://www.linkedin.com/in/afonso-marinho-da-silva/',
       name: 'LinkedIn',
     },
-    { img: githubIcon, url: 'https://github.com/afonsosilva97', name: 'GitHub' },
+    {
+      img: githubIcon,
+      url: 'https://github.com/afonsosilva97',
+      name: 'GitHub',
+    },
     {
       img: goodreadsIcon,
       url: 'https://www.goodreads.com/user/show/98787085-afonso-silva',

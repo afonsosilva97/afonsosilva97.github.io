@@ -21,14 +21,11 @@ ReactDOM.render(
         sectionHeader="Work Experience"
         experienceArray={data.workExperience}
       ></Experience>
-      <Experience
-        sectionHeader="Internships"
-        experienceArray={data.internships}
-      ></Experience>
+      <Experience sectionHeader="Internships" experienceArray={data.internships}></Experience>
       <Experience sectionHeader="Education" experienceArray={data.education}></Experience>
       <About></About>
       <Footer></Footer>
     </Layout>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

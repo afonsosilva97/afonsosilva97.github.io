@@ -9,8 +9,5 @@
     "main.e65fdd0b.js.map": "/afonsosilva97/afonsosilva97.github.io/static/js/main.e65fdd0b.js.map",
     "787.0da3b5f8.chunk.js.map": "/afonsosilva97/afonsosilva97.github.io/static/js/787.0da3b5f8.chunk.js.map"
   },
-  "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.e65fdd0b.js"
-  ]
+  "entrypoints": ["static/css/main.073c9b0a.css", "static/js/main.e65fdd0b.js"]
 }
