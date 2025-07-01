@@ -1,6 +1,16 @@
 import React from 'react';
 
-const Skills = ({ sectionHeader, skillsArray }) => {
+interface Skill {
+  img: string;
+  paragraph: string;
+}
+
+interface SkillsProps {
+  sectionHeader: string;
+  skillsArray: Skill[];
+}
+
+const Skills: React.FC<SkillsProps> = ({ sectionHeader, skillsArray }) => {
   return (
     <div className="section">
       <div className="container">

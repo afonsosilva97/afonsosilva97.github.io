@@ -1,6 +1,20 @@
 import React from 'react';
 
-const Experience = ({ sectionHeader, experienceArray }) => {
+interface ExperienceEntry {
+  img: string;
+  companyName: string;
+  title: string;
+  startDate: string;
+  endDate: string;
+  descriptionParagraphs: string[];
+}
+
+interface ExperienceProps {
+  sectionHeader: string;
+  experienceArray: ExperienceEntry[];
+}
+
+const Experience: React.FC<ExperienceProps> = ({ sectionHeader, experienceArray }) => {
   return (
     <div className="section">
       <div className="container">
@@ -17,8 +31,8 @@ const Experience = ({ sectionHeader, experienceArray }) => {
                 </p>
               </div>
               <div className="experience-description">
-                {experience.descriptionParagraphs?.map((paragraph) => (
-                  <p>{paragraph}</p>
+                {experience.descriptionParagraphs?.map((paragraph, pIndex) => (
+                  <p key={pIndex}>{paragraph}</p>
                 ))}
               </div>
             </div>

@@ -21,15 +21,49 @@ import githubIcon from './images/github-icon.svg';
 import linkedinIcon from './images/linkedin-icon.svg';
 import goodreadsIcon from './images/goodreads-icon.svg';
 
-function calculateDifferenceBetweenDates(startDate, endDate) {
-  return Math.abs(new Date(endDate - startDate).getUTCFullYear() - 1970);
+interface Skill {
+  img: string;
+  paragraph: string;
+}
+
+interface Experience {
+  companyName: string;
+  title: string;
+  img: string;
+  startDate: string;
+  endDate: string;
+  descriptionParagraphs: string[];
+}
+
+interface Social {
+  img: string;
+  url: string;
+  name: string;
+}
+
+interface PersonalData {
+  name: string;
+  profession: string;
+  birthDate: Date;
+  age: number;
+  mainTechStack: Skill[];
+  otherTechnologiesAndSkills: Skill[];
+  workExperience: Experience[];
+  internships: Experience[];
+  education: Experience[];
+  aboutParagraphs: string[];
+  social: Social[];
+}
+
+function calculateDifferenceBetweenDates(startDate: Date, endDate: number): number {
+  return Math.abs(new Date(endDate - startDate.getTime()).getUTCFullYear() - 1970);
 }
 
 const name = 'Afonso Silva';
 const birthday = new Date(1997, 3, 25);
 const age = calculateDifferenceBetweenDates(birthday, Date.now());
 
-const personalData = {
+const personalData: PersonalData = {
   name: name,
   profession: 'Software Engineer',
   birthDate: birthday,
