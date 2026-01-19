@@ -9,6 +9,7 @@ import sqlIcon from './images/sql-database-icon.svg';
 import gitIcon from './images/git-icon.svg';
 import safeIcon from './images/safe-logo.png';
 
+import tripteaseLogo from './images/triptease-logo.jpeg';
 import lidyaIcon from './images/lidya-logo.png';
 import cofcoIntlIcon from './images/cofco-intl-logo.png';
 import vestasIcon from './images/vestas-logo.png';
@@ -19,7 +20,6 @@ import isepIcon from './images/isep-logo.png';
 
 import githubIcon from './images/github-icon.svg';
 import linkedinIcon from './images/linkedin-icon.svg';
-import goodreadsIcon from './images/goodreads-icon.svg';
 
 interface Skill {
   img: string;
@@ -71,38 +71,41 @@ const personalData: PersonalData = {
 
   mainTechStack: [
     {
+      img: javascriptIcon,
+      paragraph:
+        'Proficient in JavaScript and TypeScript, currently using both extensively in my day-to-day work building scalable web applications with Node.js.',
+    },
+    {
+      img: reactIcon,
+      paragraph:
+        'Experienced with React for building modern frontend applications. What started as inspiration for this website has grown into production-level expertise.',
+    },
+    {
       img: csharpIcon,
-      paragraph: 'C# is the language I have the most experience with at the moment.',
+      paragraph:
+        'C# has been a core language in my toolkit, with years of experience building robust backend systems.',
     },
     {
       img: dotnetIcon,
-      paragraph: ".NET is by far the developer platform I've used most extensively.",
-    },
-    {
-      img: pythonIcon,
-      paragraph: 'I have developed multiple applications from the ground up using Python.',
+      paragraph:
+        ".NET is a platform I've used extensively throughout multiple roles, particularly for enterprise applications.",
     },
     {
       img: sqlIcon,
       paragraph:
-        "I'm very used to writing SQL queries as well as building relational databases. I have experience with multiple database systems, such as SQL Server and PostgreSQL.",
+        'Very comfortable writing SQL queries and building relational databases. I have experience with multiple database systems, including SQL Server and PostgreSQL.',
     },
     {
       img: gitIcon,
       paragraph:
-        "Git is the version control system I'm most used to. I've worked with TFS as well.",
+        "Git is the version control system I use daily. I've also worked with TFS in previous roles.",
     },
   ],
 
   otherTechnologiesAndSkills: [
     {
-      img: javascriptIcon,
-      paragraph: "I'm no JavaScript expert, but I'm definitely invested in getting better at it!",
-    },
-    {
-      img: reactIcon,
-      paragraph:
-        'Still learning its fundamentals, but already finding React very interesting. Learning React is what inspired me to build this website.',
+      img: pythonIcon,
+      paragraph: 'I have developed multiple applications from the ground up using Python.',
     },
     {
       img: djangoIcon,
@@ -117,13 +120,25 @@ const personalData: PersonalData = {
 
   workExperience: [
     {
+      companyName: 'Triptease',
+      title: 'Software Engineer',
+      img: tripteaseLogo,
+      startDate: 'Sep 2024',
+      endDate: 'Present',
+      descriptionParagraphs: [
+        'I develop commercial data systems that empower our Sales managers, Customer Success Managers, and Finance controllers to efficiently access and manage critical business data. By building robust internal tools and data infrastructure, teams are able to operate more effectively and support thousands of hotels in driving direct bookings and reducing reliance on online travel agencies.',
+        'Tech stack includes TypeScript, Node, React, PostgreSQL, Docker, Git, Google Cloud.',
+      ],
+    },
+    {
       companyName: 'Lidya',
       title: 'Software Engineer',
       img: lidyaIcon,
       startDate: 'March 2022',
-      endDate: 'Present',
+      endDate: 'Aug 2024',
       descriptionParagraphs: [
-        "Currently a key member of Lidya's backend team, specializing in feature analysis, code development, and ensuring on-time project delivery. My commitment extends to providing support for system integrity while actively engaging in peer code reviews and continuously collaborating with all engineering and product teams.",
+        "Played a crucial role in Lidya's backend team, specializing in feature analysis, code development, and ensuring on-time project delivery. My commitment extends to providing support for system integrity while actively engaging in peer code reviews and continuously collaborating with all engineering and product teams.",
+        'Tech stack included C#, .NET, PostgreSQL, Git.',
       ],
     },
     {
@@ -188,9 +203,9 @@ const personalData: PersonalData = {
   ],
 
   aboutParagraphs: [
-    `My name is ${name} and I'm a ${age} years old software engineer from Portugal. I am mainly a backend developer but also have some frontend skills as I'm always willing to expand my software development abilities. Technologies such as C# and .NET have been the ones I've used more extensively, but that hasn't stopped from venturing into new projects using other technologies such as Python, JavaScript and React.`,
+    `My name is ${name} and I'm a ${age} years old software engineer from Portugal with over 7 years of experience developing and maintaining scalable web applications. I work across the full stack with proficiency in multiple technologies, demonstrating capacity to deliver value in both collaborative and independent projects across various industries. Currently, I'm focused on building commercial data systems using TypeScript, Node, React, and PostgreSQL, while bringing my extensive background in C# and .NET to every project.`,
     "Besides developing software I have a big passion for sports, especially football, motorsports and martial arts. In the past I've practiced tennis, Muay Thai and boxing. Nowadays, weightlifting, calisthenics and swimming are my choices of exercise to keep my body and mind in good health.",
-    "Over time, as I've tried to build up good habits in my routine, reading went from being a 'task' to a pleasure of mine. In case you are curious on what I'm currently reading or have read recently, you can find the link to my Goodreads profile below.",
+    "Over time, as I've tried to build up good habits in my routine, reading has become a genuine pleasure of mine, providing a great balance to my technical work.",
     'Photography is another passion of mine and it used to be a hobby that I put a lot of hours into. The love for capturing images is still there, but as of now I almost only carry my camera when travelling.',
   ],
 
@@ -204,11 +219,6 @@ const personalData: PersonalData = {
       img: githubIcon,
       url: 'https://github.com/afonsosilva97',
       name: 'GitHub',
-    },
-    {
-      img: goodreadsIcon,
-      url: 'https://www.goodreads.com/user/show/98787085-afonso-silva',
-      name: 'Goodreads',
     },
   ],
 };
