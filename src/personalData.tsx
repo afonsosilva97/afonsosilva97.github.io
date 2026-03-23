@@ -126,7 +126,7 @@ const personalData: PersonalData = {
       startDate: 'Sep 2024',
       endDate: 'Present',
       descriptionParagraphs: [
-        'I develop commercial data systems that empower our Sales managers, Customer Success Managers, and Finance controllers to efficiently access and manage critical business data. By building robust internal tools and data infrastructure, teams are able to operate more effectively and support thousands of hotels in driving direct bookings and reducing reliance on online travel agencies.',
+        'I develop commercial data systems that empower our Sales, Customer Success, Product Integration, and Finance teams to efficiently access and manage critical business data. By building robust internal tools and data infrastructure, teams are able to operate more effectively and support thousands of hotels in driving direct bookings and reducing reliance on online travel agencies.',
         'Tech stack includes TypeScript, Node, React, PostgreSQL, Docker, Git, Google Cloud.',
       ],
     },
@@ -137,7 +137,7 @@ const personalData: PersonalData = {
       startDate: 'March 2022',
       endDate: 'Aug 2024',
       descriptionParagraphs: [
-        "Played a crucial role in Lidya's backend team, specializing in feature analysis, code development, and ensuring on-time project delivery. My commitment extends to providing support for system integrity while actively engaging in peer code reviews and continuously collaborating with all engineering and product teams.",
+        "Key member of Lidya's backend team, specializing in feature analysis, code development, and ensuring on-time project delivery. My commitment extended to providing support for system integrity while actively engaging in peer code reviews and continuously collaborating with all engineering and product teams.",
         'Tech stack included C#, .NET, PostgreSQL, Git.',
       ],
     },
