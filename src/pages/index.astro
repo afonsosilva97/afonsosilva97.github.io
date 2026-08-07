@@ -1,0 +1,25 @@
+---
+import data from '../data/personalData';
+import Layout from '../layouts/Layout.astro';
+import Skills from '../components/Skills.astro';
+import Experience from '../components/Experience.astro';
+import About from '../components/About.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+  <Experience
+    sectionHeader="Work Experience"
+    experienceArray={data.workExperience}
+    id="experience"
+  />
+  <Skills sectionHeader="Main Tech Stack" skillsArray={data.mainTechStack} id="skills" />
+  <Skills
+    sectionHeader="Other Technologies & Skills"
+    skillsArray={data.otherTechnologiesAndSkills}
+  />
+  <Experience sectionHeader="Internships" experienceArray={data.internships} />
+  <Experience sectionHeader="Education" experienceArray={data.education} />
+  <About />
+  <Footer />
+</Layout>

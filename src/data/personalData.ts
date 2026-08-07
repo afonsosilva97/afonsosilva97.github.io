@@ -1,32 +1,10 @@
-// Technologies/skills icons
-import csharpIcon from './images/csharp-icon.svg';
-import dotnetIcon from './images/dotnet-icon.svg';
-import pythonIcon from './images/python-icon.svg';
-import djangoIcon from './images/django-logo-negative.svg';
-import javascriptIcon from './images/javascript-icon.svg';
-import reactIcon from './images/react-logo.svg';
-import sqlIcon from './images/sql-database-icon.svg';
-import gitIcon from './images/git-icon.svg';
-import safeIcon from './images/safe-logo.png';
-
-import tripteaseLogo from './images/triptease-logo.jpeg';
-import lidyaIcon from './images/lidya-logo.png';
-import cofcoIntlIcon from './images/cofco-intl-logo.png';
-import vestasIcon from './images/vestas-logo.png';
-import egoiIcon from './images/e-goi-logo.svg';
-import armisIcon from './images/armis-logo.svg';
-
-import isepIcon from './images/isep-logo.png';
-
-import githubIcon from './images/github-icon.svg';
-import linkedinIcon from './images/linkedin-icon.svg';
-
-interface Skill {
+export interface Skill {
+  name: string;
   img: string;
   paragraph: string;
 }
 
-interface Experience {
+export interface Experience {
   companyName: string;
   title: string;
   img: string;
@@ -35,13 +13,13 @@ interface Experience {
   descriptionParagraphs: string[];
 }
 
-interface Social {
+export interface Social {
   img: string;
   url: string;
   name: string;
 }
 
-interface PersonalData {
+export interface PersonalData {
   name: string;
   profession: string;
   birthDate: Date;
@@ -71,32 +49,38 @@ const personalData: PersonalData = {
 
   mainTechStack: [
     {
-      img: javascriptIcon,
+      name: 'JavaScript & TypeScript',
+      img: '/images/javascript-icon.svg',
       paragraph:
         'Proficient in JavaScript and TypeScript, currently using both extensively in my day-to-day work building scalable web applications with Node.js.',
     },
     {
-      img: reactIcon,
+      name: 'React',
+      img: '/images/react-logo.svg',
       paragraph:
         'Experienced with React for building modern frontend applications. What started as inspiration for this website has grown into production-level expertise.',
     },
     {
-      img: csharpIcon,
+      name: 'C#',
+      img: '/images/csharp-icon.svg',
       paragraph:
         'C# has been a core language in my toolkit, with years of experience building robust backend systems.',
     },
     {
-      img: dotnetIcon,
+      name: '.NET',
+      img: '/images/dotnet-icon.svg',
       paragraph:
         ".NET is a platform I've used extensively throughout multiple roles, particularly for enterprise applications.",
     },
     {
-      img: sqlIcon,
+      name: 'SQL',
+      img: '/images/sql-database-icon.svg',
       paragraph:
         'Very comfortable writing SQL queries and building relational databases. I have experience with multiple database systems, including SQL Server and PostgreSQL.',
     },
     {
-      img: gitIcon,
+      name: 'Git',
+      img: '/images/git-icon.svg',
       paragraph:
         "Git is the version control system I use daily. I've also worked with TFS in previous roles.",
     },
@@ -104,15 +88,18 @@ const personalData: PersonalData = {
 
   otherTechnologiesAndSkills: [
     {
-      img: pythonIcon,
+      name: 'Python',
+      img: '/images/python-icon.svg',
       paragraph: 'I have developed multiple applications from the ground up using Python.',
     },
     {
-      img: djangoIcon,
+      name: 'Django',
+      img: '/images/django-logo-negative.svg',
       paragraph: "I've used the Django framework to develop some Python web services.",
     },
     {
-      img: safeIcon,
+      name: 'SAFe',
+      img: '/images/safe-logo.png',
       paragraph:
         'My team worked using SAFe (Scaled Agile Framework) at Vestas. We had training along with other teams at Vestas HQ in Denmark.',
     },
@@ -122,7 +109,7 @@ const personalData: PersonalData = {
     {
       companyName: 'Triptease',
       title: 'Software Engineer',
-      img: tripteaseLogo,
+      img: '/images/triptease-logo.jpeg',
       startDate: 'Sep 2024',
       endDate: 'Present',
       descriptionParagraphs: [
@@ -133,7 +120,7 @@ const personalData: PersonalData = {
     {
       companyName: 'Lidya',
       title: 'Software Engineer',
-      img: lidyaIcon,
+      img: '/images/lidya-logo.png',
       startDate: 'March 2022',
       endDate: 'Aug 2024',
       descriptionParagraphs: [
@@ -144,7 +131,7 @@ const personalData: PersonalData = {
     {
       companyName: 'COFCO International',
       title: 'Market Risk Software Engineer',
-      img: cofcoIntlIcon,
+      img: '/images/cofco-intl-logo.png',
       startDate: 'Nov 2019',
       endDate: 'Nov 2021',
       descriptionParagraphs: [
@@ -155,7 +142,7 @@ const personalData: PersonalData = {
     {
       companyName: 'Vestas',
       title: 'Software Engineer',
-      img: vestasIcon,
+      img: '/images/vestas-logo.png',
       startDate: 'Sep 2018',
       endDate: 'Nov 2019',
       descriptionParagraphs: [
@@ -169,7 +156,7 @@ const personalData: PersonalData = {
     {
       companyName: 'E-goi',
       title: 'Academic Internship',
-      img: egoiIcon,
+      img: '/images/e-goi-logo.svg',
       startDate: 'Feb 2018',
       endDate: 'Jul 2018',
       descriptionParagraphs: [
@@ -179,7 +166,7 @@ const personalData: PersonalData = {
     {
       companyName: 'Armis Group',
       title: 'Summer Internship',
-      img: armisIcon,
+      img: '/images/armis-logo.svg',
       startDate: 'Jul 2017',
       endDate: 'Sep 2017',
       descriptionParagraphs: [
@@ -192,7 +179,7 @@ const personalData: PersonalData = {
     {
       companyName: 'Instituto Superior de Engenharia do Porto',
       title: "Bachelor's Degree, Computer Engineering",
-      img: isepIcon,
+      img: '/images/isep-logo.png',
       startDate: '2015',
       endDate: '2018',
       descriptionParagraphs: [
@@ -211,12 +198,12 @@ const personalData: PersonalData = {
 
   social: [
     {
-      img: linkedinIcon,
+      img: '/images/linkedin-icon.svg',
       url: 'https://www.linkedin.com/in/afonso-marinho-da-silva/',
       name: 'LinkedIn',
     },
     {
-      img: githubIcon,
+      img: '/images/github-icon.svg',
       url: 'https://github.com/afonsosilva97',
       name: 'GitHub',
     },
