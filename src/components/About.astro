@@ -1,0 +1,34 @@
+---
+import data from '../data/personalData';
+---
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-container">
+      <h2 class="section-title">About Me</h2>
+      {data.aboutParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-container {
+    width: 80vw;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p {
+    width: 50vw;
+    font-size: 1em;
+    text-align: justify;
+  }
+
+  @media (max-width: 1023px) {
+    p {
+      width: 80vw;
+    }
+  }
+</style>

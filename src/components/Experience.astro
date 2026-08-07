@@ -1,0 +1,98 @@
+---
+import type { Experience } from '../data/personalData';
+
+interface Props {
+  sectionHeader: string;
+  experienceArray: Experience[];
+  id?: string;
+}
+
+const { sectionHeader, experienceArray, id } = Astro.props;
+---
+
+<section class="section" id={id}>
+  <div class="container">
+    <div class="experience-container">
+      <h2 class="section-title">{sectionHeader}</h2>
+      {
+        experienceArray.map((experience) => (
+          <article class="experience">
+            <div class="experience-header">
+              <img src={experience.img} alt={`${experience.companyName} logo`} loading="lazy" />
+              <p class="company-name">{experience.companyName}</p>
+              <p class="title-text">{experience.title}</p>
+              <p class="experience-duration">
+                {experience.startDate} - {experience.endDate}
+              </p>
+            </div>
+            <div class="experience-description">
+              {experience.descriptionParagraphs.map((paragraph) => (
+                <p>{paragraph}</p>
+              ))}
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .experience-container {
+    width: 80vw;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience {
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .experience-header {
+    flex: 1;
+    text-align: center;
+    padding: 2vh;
+  }
+
+  .experience-header img {
+    max-height: 3.5rem;
+    max-width: 12.5rem;
+  }
+
+  .company-name {
+    margin: 1.8vh;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .title-text {
+    margin-bottom: 0.6vh;
+    font-size: 1.1em;
+  }
+
+  .experience-duration {
+    font-size: 0.8em;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  .experience-description {
+    flex: 2;
+    padding: 2vh;
+  }
+
+  .experience-description p {
+    font-size: 1em;
+    text-align: justify;
+  }
+
+  @media (max-width: 1023px) {
+    .experience {
+      flex-direction: column;
+    }
+  }
+</style>

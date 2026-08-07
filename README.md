@@ -1,64 +1,28 @@
-This is the source code of my very own website: https://afonsosilva97.github.io/ \
-I've mainly developed backend applications in my career but I like to learn new skills and this seemed like a fun way to learn the basics of React.\
-Below are the React guidelines which have helped me build this project (and which might serve you just as well if you intend to create something too).
+# afonsosilva97.github.io
 
-# Getting Started with Create React App
+Source code of my personal website: https://afonsosilva97.github.io/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Built with [Astro](https://astro.build) — a static site generator. The site ships zero JavaScript: all content is rendered to plain HTML at build time.
 
-## Available Scripts
+Originally built with React/Create React App; migrated to Astro in 2026 after CRA was deprecated.
 
-In the project directory, you can run:
+## Structure
 
-### `yarn start`
+- `src/data/personalData.ts` — all site content (experience, skills, about, social links) as typed data
+- `src/pages/index.astro` — the single page, composing the sections
+- `src/layouts/Layout.astro` — HTML shell, meta tags, fonts, navbar
+- `src/components/*.astro` — section components, each with scoped styles
+- `public/` — images, icons, manifest
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Commands
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Command        | Action                                              |
+| -------------- | --------------------------------------------------- |
+| `yarn install` | Install dependencies                                 |
+| `yarn dev`     | Start dev server at http://localhost:4321            |
+| `yarn build`   | Type-check (`astro check`) and build to `dist/`      |
+| `yarn preview` | Serve the production build locally                   |
 
-### `yarn test`
+## Deployment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pushes to `main` trigger the GitHub Actions workflow (`.github/workflows/deploy.yml`), which builds the site and deploys `dist/` to GitHub Pages.
