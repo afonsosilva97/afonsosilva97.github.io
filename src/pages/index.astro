@@ -8,15 +8,15 @@ import Footer from '../components/Footer.astro';
 ---
 
 <Layout>
-  <Experience
-    sectionHeader="Work Experience"
-    experienceArray={data.workExperience}
-    id="experience"
-  />
   <Skills sectionHeader="Main Tech Stack" skillsArray={data.mainTechStack} id="skills" />
   <Skills
     sectionHeader="Other Technologies & Skills"
     skillsArray={data.otherTechnologiesAndSkills}
+  />
+  <Experience
+    sectionHeader="Work Experience"
+    experienceArray={data.workExperience}
+    id="experience"
   />
   <Experience sectionHeader="Internships" experienceArray={data.internships} />
   <Experience sectionHeader="Education" experienceArray={data.education} />
