@@ -8,6 +8,11 @@ updates:
       all-npm-dependencies:
         patterns:
           - '*'
+    ignore:
+      # astro check requires TypeScript 6.x; TS 7+ (native compiler) lacks the API it needs.
+      # See https://github.com/withastro/roadmap/discussions/1321 — drop this once Astro supports TS 7.
+      - dependency-name: typescript
+        update-types: ['version-update:semver-major']
 
   - package-ecosystem: github-actions
     directory: /
