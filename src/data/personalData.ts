@@ -22,8 +22,7 @@ export interface Social {
 export interface PersonalData {
   name: string;
   profession: string;
-  birthDate: Date;
-  age: number;
+  yearsOfExperience: number;
   mainTechStack: Skill[];
   otherTechnologiesAndSkills: Skill[];
   workExperience: Experience[];
@@ -33,19 +32,18 @@ export interface PersonalData {
   social: Social[];
 }
 
-function calculateDifferenceBetweenDates(startDate: Date, endDate: number): number {
-  return Math.abs(new Date(endDate - startDate.getTime()).getUTCFullYear() - 1970);
-}
-
 const name = 'Afonso Silva';
-const birthday = new Date(1997, 3, 25);
-const age = calculateDifferenceBetweenDates(birthday, Date.now());
+
+// First full-time role started September 2018; computed at build time.
+const careerStart = new Date(2018, 8);
+const yearsOfExperience = Math.floor(
+  (Date.now() - careerStart.getTime()) / (365.25 * 24 * 60 * 60 * 1000),
+);
 
 const personalData: PersonalData = {
   name: name,
   profession: 'Software Engineer',
-  birthDate: birthday,
-  age: age,
+  yearsOfExperience: yearsOfExperience,
 
   mainTechStack: [
     {
@@ -190,7 +188,7 @@ const personalData: PersonalData = {
   ],
 
   aboutParagraphs: [
-    `My name is ${name} and I'm a ${age} years old software engineer from Portugal with over 7 years of experience developing and maintaining scalable web applications. I work across the full stack with proficiency in multiple technologies, demonstrating capacity to deliver value in both collaborative and independent projects across various industries. Currently, I'm focused on building commercial data systems using TypeScript, Node, React, and PostgreSQL, while bringing my extensive background in C# and .NET to every project.`,
+    `My name is ${name} and I'm a software engineer from Portugal with over ${yearsOfExperience} years of experience developing and maintaining scalable web applications. I work across the full stack with proficiency in multiple technologies, demonstrating capacity to deliver value in both collaborative and independent projects across various industries. Currently, I'm focused on building commercial data systems using TypeScript, Node, React, and PostgreSQL, while bringing my extensive background in C# and .NET to every project.`,
     "Besides developing software I have a big passion for sports, especially football, motorsports and martial arts. In the past I've practiced tennis, Muay Thai and boxing. Nowadays, weightlifting, calisthenics and swimming are my choices of exercise to keep my body and mind in good health.",
     "Over time, as I've tried to build up good habits in my routine, reading has become a genuine pleasure of mine, providing a great balance to my technical work.",
     'Photography is another passion of mine and it used to be a hobby that I put a lot of hours into. The love for capturing images is still there, but as of now I almost only carry my camera when travelling.',
