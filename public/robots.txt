@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://afonsosilva97.github.io/sitemap-index.xml
+Sitemap: https://afonsosilva.dev/sitemap-index.xml
