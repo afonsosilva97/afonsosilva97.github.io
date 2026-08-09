@@ -24,6 +24,7 @@ const { sectionHeader, experienceArray, id } = Astro.props;
               <p class="experience-duration">
                 {experience.startDate} - {experience.endDate}
               </p>
+              {experience.location && <p class="experience-location">{experience.location}</p>}
             </div>
             <div class="experience-description">
               {experience.descriptionParagraphs.map((paragraph) => (
@@ -79,6 +80,12 @@ const { sectionHeader, experienceArray, id } = Astro.props;
     font-size: 0.8em;
     margin: 0;
     color: rgba(0, 0, 0, 0.75);
+  }
+
+  .experience-location {
+    font-size: 0.8em;
+    margin: 0.4em 0 0;
+    color: rgba(0, 0, 0, 0.55);
   }
 
   .experience-description {

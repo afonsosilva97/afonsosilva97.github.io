@@ -1,6 +1,6 @@
 export interface Skill {
   name: string;
-  img: string;
+  imgs: string[];
   paragraph: string;
 }
 
@@ -10,6 +10,7 @@ export interface Experience {
   img: string;
   startDate: string;
   endDate: string;
+  location?: string;
   descriptionParagraphs: string[];
 }
 
@@ -45,42 +46,42 @@ const personalData: PersonalData = {
   name: name,
   profession: 'Software Engineer',
   yearsOfExperience: yearsOfExperience,
-  hook: `Full-stack software engineer in Portugal — ${yearsOfExperience}+ years across fintech, commodities trading and renewable energy, currently building commercial data systems for hotels at Triptease.`,
+  hook: `Full-stack software engineer in Portugal with ${yearsOfExperience}+ years across fintech, commodities trading and renewable energy, currently building commercial data systems for hotels at Triptease.`,
 
   mainTechStack: [
     {
       name: 'JavaScript & TypeScript',
-      img: '/images/javascript-icon.svg',
+      imgs: ['/images/javascript-icon.svg', '/images/typescript-icon.svg'],
       paragraph:
         'Proficient in JavaScript and TypeScript, currently using both extensively in my day-to-day work building scalable web applications with Node.js.',
     },
     {
       name: 'React',
-      img: '/images/react-logo.svg',
+      imgs: ['/images/react-logo.svg'],
       paragraph:
         'Experienced with React for building modern frontend applications. What started as inspiration for this website has grown into production-level expertise.',
     },
     {
       name: 'C#',
-      img: '/images/csharp-icon.svg',
+      imgs: ['/images/csharp-icon.svg'],
       paragraph:
         'C# has been a core language in my toolkit, with years of experience building robust backend systems.',
     },
     {
       name: '.NET',
-      img: '/images/dotnet-icon.svg',
+      imgs: ['/images/dotnet-icon.svg'],
       paragraph:
         ".NET is a platform I've used extensively throughout multiple roles, particularly for enterprise applications.",
     },
     {
       name: 'SQL',
-      img: '/images/sql-database-icon.svg',
+      imgs: ['/images/sql-database-icon.svg'],
       paragraph:
         'Very comfortable writing SQL queries and building relational databases. I have experience with multiple database systems, including SQL Server and PostgreSQL.',
     },
     {
       name: 'Git',
-      img: '/images/git-icon.svg',
+      imgs: ['/images/git-icon.svg'],
       paragraph:
         "Git is the version control system I use daily. I've also worked with TFS in previous roles.",
     },
@@ -89,17 +90,17 @@ const personalData: PersonalData = {
   otherTechnologiesAndSkills: [
     {
       name: 'Python',
-      img: '/images/python-icon.svg',
+      imgs: ['/images/python-icon.svg'],
       paragraph: 'I have developed multiple applications from the ground up using Python.',
     },
     {
       name: 'Django',
-      img: '/images/django-logo-negative.svg',
+      imgs: ['/images/django-logo-negative.svg'],
       paragraph: "I've used the Django framework to develop some Python web services.",
     },
     {
       name: 'SAFe',
-      img: '/images/safe-logo.png',
+      imgs: ['/images/safe-logo.png'],
       paragraph:
         'My team worked using SAFe (Scaled Agile Framework) at Vestas. We had training along with other teams at Vestas HQ in Denmark.',
     },
@@ -112,20 +113,22 @@ const personalData: PersonalData = {
       img: '/images/triptease-logo.jpeg',
       startDate: 'Sep 2024',
       endDate: 'Present',
+      location: 'Remote, Portugal · UK company',
       descriptionParagraphs: [
-        'I develop commercial data systems that empower our Sales, Customer Success, Product Integration, and Finance teams to efficiently access and manage critical business data. By building robust internal tools and data infrastructure, teams are able to operate more effectively and support thousands of hotels in driving direct bookings and reducing reliance on online travel agencies.',
-        'Tech stack includes TypeScript, Node, React, PostgreSQL, Docker, Git, Google Cloud.',
+        "I build the internal data platform behind Triptease's commercial operations. The Sales, Customer Success and Finance teams use these systems daily to manage contracts, billing and customer data for thousands of hotels. I work across the whole stack, from database design to web services, internal tools and the cloud infrastructure they run on.",
+        'Tech stack includes TypeScript, Node, React, PostgreSQL, Docker, Google Cloud.',
       ],
     },
     {
       companyName: 'Lidya',
       title: 'Software Engineer',
       img: '/images/lidya-logo.png',
-      startDate: 'March 2022',
+      startDate: 'Mar 2022',
       endDate: 'Aug 2024',
+      location: 'Hybrid, Porto · Nigerian company',
       descriptionParagraphs: [
-        "Key member of Lidya's backend team, specializing in feature analysis, code development, and ensuring on-time project delivery. My commitment extended to providing support for system integrity while actively engaging in peer code reviews and continuously collaborating with all engineering and product teams.",
-        'Tech stack included C#, .NET, PostgreSQL, Git.',
+        "Backend engineer on Lidya's lending platform. I built and maintained the services powering credit products for small and medium enterprises, owning features from requirements analysis through delivery. I also reviewed a large share of the team's code.",
+        'Tech stack included C#, .NET, PostgreSQL.',
       ],
     },
     {
@@ -134,8 +137,9 @@ const personalData: PersonalData = {
       img: '/images/cofco-intl-logo.png',
       startDate: 'Nov 2019',
       endDate: 'Nov 2021',
+      location: 'Hybrid, Porto · Swiss-Chinese multinational',
       descriptionParagraphs: [
-        'Served as the only software engineer for the Market Risk team, ensuring the design, development, and maintenance of the entire software infrastructure. Deeply involved in understanding business requirements and translating them into effective software solutions. Extensively learned about market risk and financial markets through the guidance of experienced team members.',
+        "The only software engineer on the Market Risk team at one of the world's largest agricultural commodity traders. After training on market risk and financial markets, I designed, built and maintained all of the team's software, turning risk analysts' requirements into tools for exposure monitoring and reporting.",
         'Tech stack included C# (.NET), SQL Server, Python.',
       ],
     },
@@ -145,9 +149,10 @@ const personalData: PersonalData = {
       img: '/images/vestas-logo.png',
       startDate: 'Sep 2018',
       endDate: 'Nov 2019',
+      location: 'On-site, Porto · Danish company',
       descriptionParagraphs: [
-        'While integrating the Framework team, I worked in the design, development and maintenance of multiple Industry 4.0 projects mostly regarding control systems integrated in structures such as SCADA systems. The team followed the SAFe methodology patterns for internal alignment and coordination with other teams.',
-        'Tech stack included C# (.NET), SQL Server, Angular, Kafka, Redis among other technologies.',
+        "Software engineer on the Framework team at the world's largest wind turbine manufacturer. I built Industry 4.0 systems, mostly control system integrations around SCADA, and coordinated with other teams under SAFe.",
+        'Tech stack included C# (.NET), SQL Server, Angular, Redis.',
       ],
     },
   ],
