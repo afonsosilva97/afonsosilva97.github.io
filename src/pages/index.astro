@@ -1,6 +1,7 @@
 ---
 import data from '../data/personalData';
 import Layout from '../layouts/Layout.astro';
+import Hook from '../components/Hook.astro';
 import Skills from '../components/Skills.astro';
 import Experience from '../components/Experience.astro';
 import About from '../components/About.astro';
@@ -8,6 +9,7 @@ import Footer from '../components/Footer.astro';
 ---
 
 <Layout>
+  <Hook />
   <Skills sectionHeader="Main Tech Stack" skillsArray={data.mainTechStack} id="skills" />
   <Skills
     sectionHeader="Other Technologies & Skills"

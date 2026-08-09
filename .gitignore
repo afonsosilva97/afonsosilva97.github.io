@@ -25,3 +25,7 @@ yarn-error.log*
 # editor
 .vscode/
 .idea/
+
+# local working notes, never commit
+CONTENT-PLAN.md
+CV-NOTES.md
