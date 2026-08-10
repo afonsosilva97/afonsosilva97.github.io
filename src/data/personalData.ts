@@ -144,7 +144,7 @@ const personalData: PersonalData = {
       startDate: 'Feb 2018',
       endDate: 'Jul 2018',
       descriptionParagraphs: [
-        "Academic internship done in the context of the ISEP Computer Engineering Bachelor's Degree. A deliverability web dashboard was developed for the company with a range of different technologies, such as Python, Django, PostgreSQL & RRDTool, Munin and httpd.",
+        'Final-year internship of my Computer Engineering degree. I built an email deliverability dashboard for the company with Python, Django, PostgreSQL and RRDTool.',
       ],
     },
     {
@@ -154,7 +154,7 @@ const personalData: PersonalData = {
       startDate: 'Jul 2017',
       endDate: 'Sep 2017',
       descriptionParagraphs: [
-        "Armis set a challenge in the form of a summer internship to some of the students in ISEP's CDIO-IL class. Me and two other colleagues accepted the challenge and took on the challenge of delivering a mobile app focused on the sport of canoeing. We developed all of the backend and frontend applications ourselves working with a range of different technologies such as Java (native Android App), C#/.NET Core (backend web services), Swift (native iOS app) and SQL. This was a very enriching experience because we got to work with some technologies for the first and had the insight of Armis' software developers who provided us with some tech talks and discussed ideas with us.",
+        "Summer internship earned through ISEP's CDIO class. With two colleagues I built a canoeing sports app end to end: native Android and iOS apps backed by C# (.NET) web services.",
       ],
     },
   ],
@@ -167,8 +167,8 @@ const personalData: PersonalData = {
       startDate: '2015',
       endDate: '2018',
       descriptionParagraphs: [
-        "Computer Engineering course mostly focused on the design and development of software. In typical ISEP style, the course has a very 'hands-on' approach, meaning that projects are an instrumental part of nearly all subjects and each semester has at least one big project at the end of it. Main subjects included: Software Engineering, Data Structures, Algorithms, Databases, Systems Architecture, Data Analysis.",
-        'During 2 semesters of the course, I integrated a unique class of only 32 students which was based on the CDIO Initiative framework. This class was split into 4 teams of 8 elements each and we worked using Scrum methodology. Besides the subjects already meant for those semesters, this class had the opportunity of developing projects with the company Armis acting as a stakeholder. Instead of a single big project done at the end of the semester, each team worked on multiple large projects over the whole semester. After the first semester, Armis challenged some of the students for a summer internship where we got to develop a project from the ground in their facilities and had some learning sessions.',
+        'Hands-on Computer Engineering degree where nearly every subject ended in a project. Main areas: software engineering, data structures and algorithms, databases, systems architecture.',
+        'For two semesters I was part of a 32-student class built around the CDIO framework, working in Scrum teams on projects with Armis as the stakeholder. That work led directly to the summer internship above.',
       ],
     },
   ],
