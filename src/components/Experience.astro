@@ -5,9 +5,10 @@ interface Props {
   sectionHeader: string;
   experienceArray: Experience[];
   id?: string;
+  cvLink?: boolean;
 }
 
-const { sectionHeader, experienceArray, id } = Astro.props;
+const { sectionHeader, experienceArray, id, cvLink } = Astro.props;
 ---
 
 <section class="section" id={id}>
@@ -34,6 +35,11 @@ const { sectionHeader, experienceArray, id } = Astro.props;
           </article>
         ))
       }
+      {cvLink && (
+        <p class="cv-link">
+          <a href="/cv.pdf">View full CV</a>
+        </p>
+      )}
     </div>
   </div>
 </section>
@@ -96,6 +102,26 @@ const { sectionHeader, experienceArray, id } = Astro.props;
   .experience-description p {
     font-size: 1em;
     text-align: justify;
+  }
+
+  .cv-link {
+    margin-top: 4vh;
+    font-size: 1em;
+  }
+
+  .cv-link a {
+    display: inline-block;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 22px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .cv-link a:hover {
+    background: black;
+    color: white;
   }
 
   @media (max-width: 1023px) {
