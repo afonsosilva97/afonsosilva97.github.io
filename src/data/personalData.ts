@@ -25,8 +25,7 @@ export interface PersonalData {
   profession: string;
   yearsOfExperience: number;
   hook: string;
-  mainTechStack: Skill[];
-  otherTechnologiesAndSkills: Skill[];
+  techStack: Skill[];
   workExperience: Experience[];
   internships: Experience[];
   education: Experience[];
@@ -48,61 +47,41 @@ const personalData: PersonalData = {
   yearsOfExperience: yearsOfExperience,
   hook: `Full-stack software engineer in Portugal with ${yearsOfExperience}+ years across fintech, commodities trading and renewable energy, currently building commercial data systems for hotels at Triptease.`,
 
-  mainTechStack: [
+  techStack: [
     {
-      name: 'JavaScript & TypeScript',
-      imgs: ['/images/javascript-icon.svg', '/images/typescript-icon.svg'],
+      name: 'JavaScript ecosystem',
+      imgs: [
+        '/images/javascript-icon.svg',
+        '/images/typescript-icon.svg',
+        '/images/nodejs-icon.svg',
+        '/images/react-logo.svg',
+      ],
       paragraph:
-        'Proficient in JavaScript and TypeScript, currently using both extensively in my day-to-day work building scalable web applications with Node.js.',
+        'My current daily drivers: TypeScript, Node and React. I worked with Angular at Vestas, and this website is built with Astro.',
     },
     {
-      name: 'React',
-      imgs: ['/images/react-logo.svg'],
+      name: '.NET ecosystem',
+      imgs: ['/images/csharp-icon.svg', '/images/dotnet-icon.svg'],
       paragraph:
-        'Experienced with React for building modern frontend applications. What started as inspiration for this website has grown into production-level expertise.',
+        'Six years of C# and .NET across three companies: industrial systems at Vestas, market risk tooling at COFCO and lending at Lidya.',
     },
     {
-      name: 'C#',
-      imgs: ['/images/csharp-icon.svg'],
+      name: 'Databases',
+      imgs: ['/images/postgresql-icon.svg', '/images/sqlserver-icon.svg'],
       paragraph:
-        'C# has been a core language in my toolkit, with years of experience building robust backend systems.',
+        'PostgreSQL in production at Triptease and Lidya, SQL Server at Vestas and COFCO. Comfortable owning everything from schema design to query performance.',
     },
-    {
-      name: '.NET',
-      imgs: ['/images/dotnet-icon.svg'],
-      paragraph:
-        ".NET is a platform I've used extensively throughout multiple roles, particularly for enterprise applications.",
-    },
-    {
-      name: 'SQL',
-      imgs: ['/images/sql-database-icon.svg'],
-      paragraph:
-        'Very comfortable writing SQL queries and building relational databases. I have experience with multiple database systems, including SQL Server and PostgreSQL.',
-    },
-    {
-      name: 'Git',
-      imgs: ['/images/git-icon.svg'],
-      paragraph:
-        "Git is the version control system I use daily. I've also worked with TFS in previous roles.",
-    },
-  ],
-
-  otherTechnologiesAndSkills: [
     {
       name: 'Python',
-      imgs: ['/images/python-icon.svg'],
-      paragraph: 'I have developed multiple applications from the ground up using Python.',
-    },
-    {
-      name: 'Django',
-      imgs: ['/images/django-logo-negative.svg'],
-      paragraph: "I've used the Django framework to develop some Python web services.",
-    },
-    {
-      name: 'SAFe',
-      imgs: ['/images/safe-logo.png'],
+      imgs: ['/images/python-icon.svg', '/images/django-logo-negative.svg'],
       paragraph:
-        'My team worked using SAFe (Scaled Agile Framework) at Vestas. We had training along with other teams at Vestas HQ in Denmark.',
+        "Python has followed me across roles: scripting, data work and automated visual reports at COFCO. I've also built web services and dashboards with Django.",
+    },
+    {
+      name: 'Cloud & infrastructure',
+      imgs: ['/images/googlecloud-icon.svg', '/images/docker-icon.svg'],
+      paragraph:
+        'Docker and Google Cloud in daily use, running the data platform services and deploys.',
     },
   ],
 

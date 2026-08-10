@@ -10,11 +10,7 @@ import Footer from '../components/Footer.astro';
 
 <Layout>
   <Hook />
-  <Skills sectionHeader="Main Tech Stack" skillsArray={data.mainTechStack} id="skills" />
-  <Skills
-    sectionHeader="Other Technologies & Skills"
-    skillsArray={data.otherTechnologiesAndSkills}
-  />
+  <Skills sectionHeader="Tech Stack" skillsArray={data.techStack} id="skills" />
   <Experience
     sectionHeader="Work Experience"
     experienceArray={data.workExperience}
