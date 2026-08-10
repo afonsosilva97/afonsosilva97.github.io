@@ -6,7 +6,12 @@ import data from '../data/personalData';
   <div class="container">
     <div class="about-container">
       <h2 class="section-title">About Me</h2>
-      {data.aboutParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+      <div class="about-content">
+        <img class="portrait" src="/images/me.jpg" alt={`Portrait of ${data.name}`} loading="lazy" />
+        <div class="about-text">
+          {data.aboutParagraphs.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -20,15 +25,32 @@ import data from '../data/personalData';
     align-items: center;
   }
 
-  p {
-    width: 50vw;
+  .about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 60vw;
+    margin-top: 2vh;
+  }
+
+  .portrait {
+    width: 260px;
+    max-width: 100%;
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+
+  .about-text p {
     font-size: 1em;
     text-align: justify;
+    margin-top: 0;
   }
 
   @media (max-width: 1023px) {
-    p {
-      width: 80vw;
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+      max-width: 80vw;
     }
   }
 </style>

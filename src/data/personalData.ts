@@ -174,10 +174,10 @@ const personalData: PersonalData = {
   ],
 
   aboutParagraphs: [
-    `My name is ${name} and I'm a software engineer from Portugal with over ${yearsOfExperience} years of experience developing and maintaining scalable web applications. I work across the full stack with proficiency in multiple technologies, demonstrating capacity to deliver value in both collaborative and independent projects across various industries. Currently, I'm focused on building commercial data systems using TypeScript, Node, React, and PostgreSQL, while bringing my extensive background in C# and .NET to every project.`,
-    "Besides developing software I have a big passion for sports, especially football, motorsports and martial arts. In the past I've practiced tennis, Muay Thai and boxing. Nowadays, weightlifting, calisthenics and swimming are my choices of exercise to keep my body and mind in good health.",
-    "Over time, as I've tried to build up good habits in my routine, reading has become a genuine pleasure of mine, providing a great balance to my technical work.",
-    'Photography is another passion of mine and it used to be a hobby that I put a lot of hours into. The love for capturing images is still there, but as of now I almost only carry my camera when travelling.',
+    `My name is ${name} and I'm a software engineer from Portugal. Over the last ${yearsOfExperience}+ years I've built software for companies based in different parts of the world, in industries that have little in common, and in every working setup: office, hybrid and fully remote. These days most of my time goes into data systems and internal tools, the kind of software that quietly keeps a business running.`,
+    "Outside work, sports: I follow football, motorsport and martial arts, and over the years I've practiced tennis, Muay Thai and boxing myself. These days I mostly lift weights and run to keep myself fit.",
+    'Reading started out as a habit I forced on myself and became something I look forward to. It balances the screen time well.',
+    "Photography used to swallow whole weekends. These days I don't find myself going to events just to take photos, or spending hours editing, but I try to carry my camera with me as much as I can.",
   ],
 
   social: [
