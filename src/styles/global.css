@@ -23,6 +23,16 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 24px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

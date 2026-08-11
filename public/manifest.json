@@ -1,25 +1,20 @@
 {
   "short_name": "Afonso Silva",
-  "name": "Afonso Silva Portfolio",
+  "name": "Afonso Silva",
   "icons": [
     {
-      "src": "./icons/favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
     },
     {
-      "src": "./icons/apple-touch-icon-152x152.png",
+      "src": "/icons/icon-512.png",
       "type": "image/png",
-      "sizes": "152x152"
-    },
-    {
-      "src": "./icons/apple-touch-icon-180x180.png",
-      "type": "image/png",
-      "sizes": "180x180"
+      "sizes": "512x512"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#17181c",
+  "background_color": "#17181c"
 }
