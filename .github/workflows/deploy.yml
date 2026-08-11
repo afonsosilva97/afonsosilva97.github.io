@@ -4,7 +4,6 @@ on:
   push:
     branches: [main]
   schedule:
-    # Monthly rebuild so build-time values (years of experience) stay current
     - cron: '0 6 1 * *'
 
 permissions:
@@ -32,6 +31,8 @@ jobs:
       - run: corepack enable
 
       - run: yarn install --immutable
+
+      - run: yarn cv
 
       - run: yarn build
 

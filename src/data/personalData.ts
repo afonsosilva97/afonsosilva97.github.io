@@ -2,6 +2,8 @@ export interface Skill {
   name: string;
   imgs: string[];
   paragraph: string;
+  /** Compact keyword list rendered on the CV instead of the paragraph. */
+  cvKeywords?: string[];
 }
 
 export interface Experience {
@@ -13,6 +15,8 @@ export interface Experience {
   location?: string;
   descriptionParagraphs: string[];
   tech?: string[];
+  /** Terse bullet lines rendered on the CV instead of descriptionParagraphs. */
+  cvBullets?: string[];
 }
 
 export interface Social {
@@ -59,12 +63,14 @@ const personalData: PersonalData = {
       ],
       paragraph:
         'My current daily drivers: TypeScript, Node and React. I worked with Angular at Vestas, and this website is built with Astro.',
+      cvKeywords: ['TypeScript', 'JavaScript', 'Node.js', 'React', 'Angular', 'Astro'],
     },
     {
       name: '.NET ecosystem',
       imgs: ['/images/csharp-icon.svg', '/images/dotnet-icon.svg'],
       paragraph:
         'Six years of C# and .NET across three companies: industrial systems at Vestas, market risk tooling at COFCO and lending at Lidya.',
+      cvKeywords: ['C#', '.NET'],
     },
     {
       name: 'Databases',
@@ -75,18 +81,21 @@ const personalData: PersonalData = {
       ],
       paragraph:
         'PostgreSQL and BigQuery in production at Triptease, PostgreSQL at Lidya, SQL Server at Vestas and COFCO. Comfortable owning everything from schema design to query performance.',
+      cvKeywords: ['PostgreSQL', 'SQL Server', 'BigQuery'],
     },
     {
       name: 'Python',
       imgs: ['/images/python-icon.svg', '/images/django-logo-negative.svg'],
       paragraph:
         "Python has followed me across roles: scripting, data work and automated visual reports at COFCO. I've also built web services and dashboards with Django.",
+      cvKeywords: ['Python', 'Django'],
     },
     {
       name: 'Cloud & infrastructure',
       imgs: ['/images/googlecloud-icon.svg', '/images/docker-icon.svg'],
       paragraph:
         'Docker and Google Cloud in daily use: storage, artifact registry, running services and the infrastructure around tests and deploys.',
+      cvKeywords: ['Google Cloud', 'Docker'],
     },
   ],
 
@@ -102,6 +111,10 @@ const personalData: PersonalData = {
         "I build the internal data platform behind Triptease's commercial operations. The Sales, Customer Success and Finance teams use these systems daily to manage contracts, billing and customer data for thousands of hotels. I work across the whole stack, from database design to web services, internal tools and the cloud infrastructure they run on.",
       ],
       tech: ['TypeScript', 'Node', 'React', 'PostgreSQL', 'Docker', 'Google Cloud'],
+      cvBullets: [
+        "Build the internal data platform behind Triptease's commercial operations, used daily by Sales, Customer Success and Finance to manage contracts, billing and customer data for thousands of hotels.",
+        'Work across the whole stack: database design, web services, internal tools and the cloud infrastructure they run on.',
+      ],
     },
     {
       companyName: 'Lidya',
@@ -114,6 +127,10 @@ const personalData: PersonalData = {
         "Backend engineer on Lidya's lending platform. I built and maintained the services powering credit products for small and medium enterprises, owning features from requirements analysis through delivery. I also reviewed a large share of the team's code.",
       ],
       tech: ['C# (.NET)', 'PostgreSQL'],
+      cvBullets: [
+        "Built and maintained the backend services powering Lidya's credit products for small and medium enterprises, owning features from requirements analysis through delivery.",
+        "Reviewed a large share of the team's code.",
+      ],
     },
     {
       companyName: 'COFCO International',
@@ -126,6 +143,10 @@ const personalData: PersonalData = {
         "The only software engineer on the Market Risk team at one of the world's largest agricultural commodity traders. After training on market risk and financial markets, I designed, built and maintained all of the team's software, turning risk analysts' requirements into tools for exposure monitoring and reporting.",
       ],
       tech: ['C# (.NET)', 'SQL Server', 'Python'],
+      cvBullets: [
+        "Only software engineer on the Market Risk team at one of the world's largest agricultural commodity traders; designed, built and maintained all of the team's software.",
+        "Turned risk analysts' requirements into tools for exposure monitoring and reporting, after training on market risk and financial markets.",
+      ],
     },
     {
       companyName: 'Vestas',
@@ -138,6 +159,10 @@ const personalData: PersonalData = {
         'Software engineer on the Framework team at the global leader in wind energy. I built Industry 4.0 systems, mostly control system integrations around SCADA, and coordinated with other teams under SAFe.',
       ],
       tech: ['C# (.NET)', 'SQL Server', 'Angular', 'Redis'],
+      cvBullets: [
+        'Built Industry 4.0 systems on the Framework team at the global leader in wind energy, mostly control system integrations around SCADA.',
+        'Coordinated with other teams under SAFe.',
+      ],
     },
   ],
 
@@ -151,6 +176,9 @@ const personalData: PersonalData = {
       descriptionParagraphs: [
         'Final-year internship of my Computer Engineering degree. I built an email deliverability dashboard for the company with Python, Django, PostgreSQL and RRDTool.',
       ],
+      cvBullets: [
+        'Built an email deliverability dashboard with Python, Django, PostgreSQL and RRDTool.',
+      ],
     },
     {
       companyName: 'Armis Group',
@@ -160,6 +188,9 @@ const personalData: PersonalData = {
       endDate: 'Sep 2017',
       descriptionParagraphs: [
         "Summer internship earned through ISEP's CDIO class. With two colleagues I built a canoeing sports app end to end: native Android and iOS apps backed by C# (.NET) web services.",
+      ],
+      cvBullets: [
+        'Built a canoeing sports app end to end with two colleagues: native Android and iOS apps backed by C# (.NET) web services.',
       ],
     },
   ],
