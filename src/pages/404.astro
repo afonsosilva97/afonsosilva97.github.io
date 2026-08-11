@@ -3,30 +3,40 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-  <section class="section">
-    <div class="container">
-      <div class="not-found-container">
-        <h2 class="section-title">Page not found</h2>
-        <p>The page you are looking for does not exist or has been moved.</p>
-        <a href="/">Back to the homepage</a>
-      </div>
-    </div>
+  <section class="not-found">
+    <p class="section-label">Page not found</p>
+    <p class="msg">The page you are looking for does not exist or has been moved.</p>
+    <p class="back"><a href="/">Back to the homepage</a></p>
   </section>
 </Layout>
 
 <style>
-  .not-found-container {
-    width: 80vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .not-found {
+    padding: 0 18px;
   }
 
-  a {
-    color: black;
+  .msg {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    max-width: 65ch;
+    margin: 0 0 22px;
+  }
+
+  .back a {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    border: 1.5px solid var(--accent);
+    color: var(--accent);
+    padding: 10px 22px;
+    font-size: 0.95rem;
     font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .back a:hover {
+    background: var(--accent);
+    color: var(--bg);
   }
 </style>
