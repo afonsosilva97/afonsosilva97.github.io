@@ -10,75 +10,68 @@ interface Props {
 const { sectionHeader, skillsArray, id } = Astro.props;
 ---
 
-<section class="section" id={id}>
-  <div class="container">
-    <div class="skills-container">
-      <h2 class="section-title">{sectionHeader}</h2>
-      <div class="skills-grid">
-        {
-          skillsArray.map((skill) => (
-            <div class="skill">
-              <div class="skill-icons">
-                {skill.imgs.map((img) => (
-                  <img src={img} alt={skill.name} loading="lazy" />
-                ))}
-              </div>
-              <p>{skill.paragraph}</p>
-            </div>
-          ))
-        }
-      </div>
-    </div>
+<section id={id}>
+  <p class="section-label">{sectionHeader}</p>
+  <div class="grid">
+    {
+      skillsArray.map((skill) => (
+        <div class="tcard">
+          <div class="ic">
+            <span class="logo-chip">
+              {skill.imgs.map((img) => (
+                <img src={img} alt="" loading="lazy" />
+              ))}
+            </span>
+          </div>
+          <b>{skill.name}</b>
+          <p>{skill.paragraph}</p>
+        </div>
+      ))
+    }
   </div>
 </section>
 
 <style>
-  .skills-container {
-    width: 80vw;
-    margin-top: 8vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .skills-grid {
+  .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 4vh;
-    gap: 20px;
-    width: 100%;
-  }
-
-  .skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .skill-icons {
-    display: flex;
+    grid-template-columns: 1fr 1fr;
     gap: 12px;
-    align-items: center;
+    padding: 0 18px;
   }
 
-  .skill img {
-    height: 3.25rem;
+  .tcard {
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    padding: 15px 16px;
+    background: var(--card);
   }
 
-  .skill p {
-    font-size: 1em;
+  .ic {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 9px;
   }
 
-  @media (max-width: 767px) {
-    .skills-grid {
+  .ic img {
+    height: 24px;
+    width: auto;
+  }
+
+  .tcard b {
+    color: var(--heading);
+    font-size: 1.02rem;
+  }
+
+  .tcard p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 5px 0 0;
+  }
+
+  @media (max-width: 880px) {
+    .grid {
       grid-template-columns: 1fr;
-    }
-  }
-
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .skills-grid {
-      grid-template-columns: 1fr 1fr;
+      padding: 0 12px;
     }
   }
 </style>

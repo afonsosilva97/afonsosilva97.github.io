@@ -12,6 +12,7 @@ export interface Experience {
   endDate: string;
   location?: string;
   descriptionParagraphs: string[];
+  tech?: string[];
 }
 
 export interface Social {
@@ -95,8 +96,8 @@ const personalData: PersonalData = {
       location: 'Remote, Portugal · UK company',
       descriptionParagraphs: [
         "I build the internal data platform behind Triptease's commercial operations. The Sales, Customer Success and Finance teams use these systems daily to manage contracts, billing and customer data for thousands of hotels. I work across the whole stack, from database design to web services, internal tools and the cloud infrastructure they run on.",
-        'Tech stack includes TypeScript, Node, React, PostgreSQL, Docker, Google Cloud.',
       ],
+      tech: ['TypeScript', 'Node', 'React', 'PostgreSQL', 'Docker', 'Google Cloud'],
     },
     {
       companyName: 'Lidya',
@@ -107,8 +108,8 @@ const personalData: PersonalData = {
       location: 'Hybrid, Porto · Nigerian company',
       descriptionParagraphs: [
         "Backend engineer on Lidya's lending platform. I built and maintained the services powering credit products for small and medium enterprises, owning features from requirements analysis through delivery. I also reviewed a large share of the team's code.",
-        'Tech stack included C# (.NET), PostgreSQL.',
       ],
+      tech: ['C# (.NET)', 'PostgreSQL'],
     },
     {
       companyName: 'COFCO International',
@@ -119,8 +120,8 @@ const personalData: PersonalData = {
       location: 'Hybrid, Porto · Swiss-Chinese multinational',
       descriptionParagraphs: [
         "The only software engineer on the Market Risk team at one of the world's largest agricultural commodity traders. After training on market risk and financial markets, I designed, built and maintained all of the team's software, turning risk analysts' requirements into tools for exposure monitoring and reporting.",
-        'Tech stack included C# (.NET), SQL Server, Python.',
       ],
+      tech: ['C# (.NET)', 'SQL Server', 'Python'],
     },
     {
       companyName: 'Vestas',
@@ -131,8 +132,8 @@ const personalData: PersonalData = {
       location: 'On-site, Porto · Danish company',
       descriptionParagraphs: [
         'Software engineer on the Framework team at the global leader in wind energy. I built Industry 4.0 systems, mostly control system integrations around SCADA, and coordinated with other teams under SAFe.',
-        'Tech stack included C# (.NET), SQL Server, Angular, Redis.',
       ],
+      tech: ['C# (.NET)', 'SQL Server', 'Angular', 'Redis'],
     },
   ],
 
@@ -182,14 +183,14 @@ const personalData: PersonalData = {
 
   social: [
     {
-      img: '/images/linkedin-icon.svg',
-      url: 'https://www.linkedin.com/in/afonso-marinho-da-silva/',
-      name: 'LinkedIn',
-    },
-    {
       img: '/images/github-icon.svg',
       url: 'https://github.com/afonsosilva97',
       name: 'GitHub',
+    },
+    {
+      img: '/images/linkedin-icon.svg',
+      url: 'https://www.linkedin.com/in/afonso-marinho-da-silva/',
+      name: 'LinkedIn',
     },
   ],
 };

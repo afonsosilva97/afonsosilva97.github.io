@@ -1,6 +1,6 @@
 ---
 import data from '../data/personalData';
-import Navbar from '../components/Navbar.astro';
+import Rail from '../components/Rail.astro';
 import '../styles/global.css';
 
 const description = `${data.name}, ${data.profession} from Portugal. Full-stack engineer working with TypeScript, Node, React, PostgreSQL, C# and .NET.`;
@@ -12,7 +12,7 @@ const ogImage = new URL('/icons/original-code-icon.png', Astro.site);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#17181c" />
     <meta name="description" content={description} />
 
     <meta property="og:type" content="website" />
@@ -23,24 +23,35 @@ const ogImage = new URL('/icons/original-code-icon.png', Astro.site);
 
     <link rel="shortcut icon" href="/icons/favicon.ico" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png" />
     <link rel="manifest" href="/manifest.json" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
     />
 
     <title>{data.name}</title>
   </head>
   <body>
-    <Navbar />
-    <main>
-      <slot />
-    </main>
+    <div class="page">
+      <Rail />
+      <main>
+        <slot />
+      </main>
+    </div>
   </body>
 </html>
+
+<style>
+  main {
+    padding: 60px 0 80px 24px;
+  }
+
+  @media (max-width: 880px) {
+    main {
+      padding: 24px 0 60px;
+    }
+  }
+</style>
