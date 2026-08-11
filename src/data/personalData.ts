@@ -68,9 +68,13 @@ const personalData: PersonalData = {
     },
     {
       name: 'Databases',
-      imgs: ['/images/postgresql-icon.svg', '/images/sqlserver-icon.svg'],
+      imgs: [
+        '/images/postgresql-icon.svg',
+        '/images/sqlserver-icon.svg',
+        '/images/bigquery-icon.svg',
+      ],
       paragraph:
-        'PostgreSQL in production at Triptease and Lidya, SQL Server at Vestas and COFCO. Comfortable owning everything from schema design to query performance.',
+        'PostgreSQL and BigQuery in production at Triptease, PostgreSQL at Lidya, SQL Server at Vestas and COFCO. Comfortable owning everything from schema design to query performance.',
     },
     {
       name: 'Python',
@@ -82,7 +86,7 @@ const personalData: PersonalData = {
       name: 'Cloud & infrastructure',
       imgs: ['/images/googlecloud-icon.svg', '/images/docker-icon.svg'],
       paragraph:
-        'Docker and Google Cloud in daily use, running the data platform services and deploys.',
+        'Docker and Google Cloud in daily use: storage, artifact registry, running services and the infrastructure around tests and deploys.',
     },
   ],
 
