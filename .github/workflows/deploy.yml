@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    # Monthly rebuild so build-time values (years of experience) stay current
+    - cron: '0 6 1 * *'
 
 permissions:
   contents: read
