@@ -4,7 +4,7 @@ import Rail from '../components/Rail.astro';
 import '../styles/global.css';
 
 const description = `${data.name}, ${data.profession} from Portugal. Full-stack engineer working with TypeScript, Node, React, PostgreSQL, C# and .NET.`;
-const ogImage = new URL('/icons/original-code-icon.png', Astro.site);
+const ogImage = new URL('/og-image.png', Astro.site);
 ---
 
 <!doctype html>
@@ -20,6 +20,7 @@ const ogImage = new URL('/icons/original-code-icon.png', Astro.site);
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:url" content={Astro.site} />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
