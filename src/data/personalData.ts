@@ -107,7 +107,7 @@ const personalData: PersonalData = {
       location: 'Hybrid, Porto · Nigerian company',
       descriptionParagraphs: [
         "Backend engineer on Lidya's lending platform. I built and maintained the services powering credit products for small and medium enterprises, owning features from requirements analysis through delivery. I also reviewed a large share of the team's code.",
-        'Tech stack included C#, .NET, PostgreSQL.',
+        'Tech stack included C# (.NET), PostgreSQL.',
       ],
     },
     {
@@ -130,7 +130,7 @@ const personalData: PersonalData = {
       endDate: 'Nov 2019',
       location: 'On-site, Porto · Danish company',
       descriptionParagraphs: [
-        "Software engineer on the Framework team at the world's largest wind turbine manufacturer. I built Industry 4.0 systems, mostly control system integrations around SCADA, and coordinated with other teams under SAFe.",
+        'Software engineer on the Framework team at the global leader in wind energy. I built Industry 4.0 systems, mostly control system integrations around SCADA, and coordinated with other teams under SAFe.',
         'Tech stack included C# (.NET), SQL Server, Angular, Redis.',
       ],
     },
@@ -174,7 +174,7 @@ const personalData: PersonalData = {
   ],
 
   aboutParagraphs: [
-    `My name is ${name} and I'm a software engineer from Portugal. Over the last ${yearsOfExperience}+ years I've built software for companies based in different parts of the world, in industries that have little in common, and in every working setup: office, hybrid and fully remote. These days most of my time goes into data systems and internal tools, the kind of software that quietly keeps a business running.`,
+    `My name is ${name} and I'm a software engineer from Portugal. Over the last ${yearsOfExperience}+ years I've built software for companies based in different parts of the world, in industries that have little in common, and in every working setup: on-site, hybrid and fully remote. These days most of my time goes into data systems and internal tools, the kind of software that quietly keeps a business running.`,
     "Outside work, sports: I follow football, motorsport and martial arts, and over the years I've practiced tennis, Muay Thai and boxing myself. These days I mostly lift weights and run to keep myself fit.",
     'Reading started out as a habit I forced on myself and became something I look forward to. It balances the screen time well.',
     "Photography used to swallow whole weekends. These days I don't find myself going to events just to take photos, or spending hours editing, but I try to carry my camera with me as much as I can.",
