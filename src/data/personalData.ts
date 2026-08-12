@@ -29,6 +29,7 @@ export interface PersonalData {
   name: string;
   profession: string;
   yearsOfExperience: number;
+  email: string;
   hook: string;
   techStack: Skill[];
   workExperience: Experience[];
@@ -50,6 +51,7 @@ const personalData: PersonalData = {
   name: name,
   profession: 'Software Engineer',
   yearsOfExperience: yearsOfExperience,
+  email: 'hello@afonsosilva.dev',
   hook: `Full-stack software engineer in Portugal with ${yearsOfExperience}+ years across fintech, commodities trading and renewable energy, currently building commercial data systems for hotels at Triptease.`,
 
   techStack: [

@@ -1,0 +1,35 @@
+---
+import data from '../data/personalData';
+import SocialIcons from './SocialIcons.astro';
+---
+
+<footer>
+  <p>Want to get in touch? <a class="mail" href={`mailto:${data.email}`}>{data.email}</a></p>
+  <SocialIcons />
+</footer>
+
+<style>
+  /* Desktop has the sticky rail with the same contact links, so the footer is mobile only. */
+  footer {
+    display: none;
+  }
+
+  p {
+    font-size: 0.98rem;
+    margin: 0 0 14px;
+  }
+
+  .mail {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  @media (max-width: 880px) {
+    footer {
+      display: block;
+      margin: 64px 0 0;
+      padding: 0 12px;
+    }
+  }
+</style>
