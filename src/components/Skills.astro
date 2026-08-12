@@ -11,7 +11,7 @@ const { sectionHeader, skillsArray, id } = Astro.props;
 ---
 
 <section id={id}>
-  <p class="section-label">{sectionHeader}</p>
+  <h2 class="section-label">{sectionHeader}</h2>
   <div class="grid">
     {
       skillsArray.map((skill) => (
@@ -23,7 +23,7 @@ const { sectionHeader, skillsArray, id } = Astro.props;
               ))}
             </span>
           </div>
-          <b>{skill.name}</b>
+          <h3>{skill.name}</h3>
           <p>{skill.paragraph}</p>
         </div>
       ))
@@ -57,10 +57,12 @@ const { sectionHeader, skillsArray, id } = Astro.props;
     width: auto;
   }
 
-  .tcard b {
+  .tcard h3 {
     font-family: 'Montserrat', sans-serif;
     color: var(--heading);
     font-size: 1.02rem;
+    font-weight: 700;
+    margin: 0;
   }
 
   .tcard p {

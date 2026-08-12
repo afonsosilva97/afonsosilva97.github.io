@@ -12,7 +12,7 @@ const { sectionHeader, experienceArray, id, cvLink } = Astro.props;
 ---
 
 <section id={id}>
-  <p class="section-label">{sectionHeader}</p>
+  <h2 class="section-label">{sectionHeader}</h2>
   {
     experienceArray.map((experience, index) => (
       <article class:list={['job', { hl: cvLink && index === 0 }]}>
