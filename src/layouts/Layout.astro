@@ -3,7 +3,7 @@ import data from '../data/personalData';
 import Rail from '../components/Rail.astro';
 import '../styles/global.css';
 
-const description = `${data.name}, ${data.profession} from Portugal. Full-stack engineer working with TypeScript, Node, React, PostgreSQL, C# and .NET.`;
+const description = `${data.name}. ${data.hook}`;
 const ogImage = new URL('/og-image.png', Astro.site);
 ---
 
@@ -23,13 +23,14 @@ const ogImage = new URL('/og-image.png', Astro.site);
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
     <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.json" />
 
     <link rel="preload" href="/fonts/montserrat-var.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/plex-sans-var.woff2" as="font" type="font/woff2" crossorigin />
 
-    <title>{data.name}</title>
+    <title>{`${data.name} - ${data.profession}`}</title>
   </head>
   <body>
     <div class="page">
