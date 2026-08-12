@@ -6,7 +6,7 @@ import data, { type Experience } from '../src/data/personalData.ts';
 
 const cvDir = dirname(fileURLToPath(import.meta.url));
 const htmlPath = join(cvDir, 'cv.html');
-const pdfPath = join(cvDir, '..', 'public', 'cv.pdf');
+const pdfPath = join(cvDir, '..', 'public', 'afonso-silva-cv.pdf');
 
 const esc = (s: string) =>
   s.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');

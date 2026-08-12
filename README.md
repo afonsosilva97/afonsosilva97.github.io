@@ -23,11 +23,11 @@ Originally built with React/Create React App; migrated to Astro in 2026 after CR
 | `yarn dev`     | Start dev server at http://localhost:4321            |
 | `yarn build`   | Type-check (`astro check`) and build to `dist/`      |
 | `yarn preview` | Serve the production build locally                   |
-| `yarn cv`      | Generate `cv/cv.html` and print it to `public/cv.pdf` |
+| `yarn cv`      | Generate `cv/cv.html` and print it to a PDF in `public/` |
 
 ## CV
 
-The CV at [afonsosilva.dev/cv.pdf](https://afonsosilva.dev/cv.pdf) is generated, not hand-made. `yarn cv` renders an HTML page from `personalData.ts` and prints it to PDF with headless Chromium, using the same fonts and accent color as the site. The generated files are gitignored; the deploy workflow rebuilds the PDF on every deploy, so site and CV never drift apart.
+The CV at [afonsosilva.dev/afonso-silva-cv.pdf](https://afonsosilva.dev/afonso-silva-cv.pdf) is generated, not hand-made. `yarn cv` renders an HTML page from `personalData.ts` and prints it to PDF with headless Chromium, using the same fonts and accent color as the site. The generated files are gitignored; the deploy workflow rebuilds the PDF on every deploy, so site and CV never drift apart.
 
 ## Deployment
 
