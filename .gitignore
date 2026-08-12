@@ -27,9 +27,6 @@ yarn-error.log*
 .idea/
 
 # local working notes and prototypes, never commit
-CONTENT-PLAN.md
-CV-NOTES.md
-DESIGN-PLAN.md
 REVIEW.md
 prototypes/
 
