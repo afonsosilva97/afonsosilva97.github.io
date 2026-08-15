@@ -1366,7 +1366,7 @@ __metadata:
   dependencies:
     "@astrojs/check": "npm:^0.9.4"
     "@astrojs/sitemap": "npm:^3.7.3"
-    astro: "npm:^7.2.0"
+    astro: "npm:^7.2.1"
     prettier: "npm:^3.9.6"
     prettier-plugin-astro: "npm:^0.14.1"
     typescript: "npm:~6.0.3"
@@ -1499,9 +1499,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "astro@npm:7.2.0"
+"astro@npm:^7.2.1":
+  version: 7.2.1
+  resolution: "astro@npm:7.2.1"
   dependencies:
     "@astrojs/compiler-rs": "npm:^0.3.2"
     "@astrojs/internal-helpers": "npm:0.10.2"
@@ -1566,7 +1566,7 @@ __metadata:
       optional: true
   bin:
     astro: ./bin/astro.mjs
-  checksum: 10c0/7e014706ea285fbc4de5365bab3f3e54e62c795896f5dd9af388065463729a491f960dd105e05a11c96c9c1f16b9607db2193b8884abedf74917dd66c7657ccb
+  checksum: 10c0/d92ca6e654e16ed9b6ed6dcb3a7c56a2390e3a702fb616aaf1d98d23a4961e34bd6b207d10542d2726ea25f67718377e60c7ede1dc1c8ba613b6f78affba5f69
   languageName: node
   linkType: hard
 
