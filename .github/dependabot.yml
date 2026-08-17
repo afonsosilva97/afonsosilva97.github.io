@@ -6,6 +6,11 @@ updates:
       interval: weekly
     groups:
       all-npm-dependencies:
+        applies-to: version-updates
+        patterns:
+          - '*'
+      npm-security-updates:
+        applies-to: security-updates
         patterns:
           - '*'
     ignore:
