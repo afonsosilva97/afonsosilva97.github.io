@@ -1,16 +1,13 @@
 version: 2
 updates:
+  # Version-update PRs disabled (open-pull-requests-limit: 0).
+  # Security PRs are unaffected by this limit and still open automatically.
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
-    cooldown:
-      default-days: 7
+      interval: monthly
+    open-pull-requests-limit: 0
     groups:
-      all-npm-dependencies:
-        applies-to: version-updates
-        patterns:
-          - '*'
       npm-security-updates:
         applies-to: security-updates
         patterns:
@@ -24,4 +21,5 @@ updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
+    open-pull-requests-limit: 0
